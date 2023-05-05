@@ -2,12 +2,16 @@
 
 Public Class Stock_In
     Dim ap As Boolean = False
+    Dim ppid As Integer = 0
     Sub productlist()
         Try
             DBCon.Open()
             query = "select PRODUCTS.PID,PRODUCTS.PRODUCT_NAME,PRODUCTS.QUANTITY,PRODUCTS.DATE,SUPPLIER.STOCKINBY,SUPPLIER.SPNAME from PRODUCTS,SUPPLIER WHERE PID=' " & GTBSEpID.Text & "'"
             Dim cmd As New SqlCommand(query, DBCon)
             Dim dr As SqlDataReader = cmd.ExecuteReader()
+            If (dr.Read()) Then
+                ppid = dr("pid")
+            End If
             Dim dt As New DataTable
             dt.Load(dr)
             GDataGridStockEn.DataSource = dt
@@ -54,11 +58,11 @@ Public Class Stock_In
     Private Sub GBtnSEAdd_Click(sender As Object, e As EventArgs) Handles GBtnSEAdd.Click
         Try
             DBCon.Open()
-            query = "update supplier set stockinby='" & UCase(GTBSeSib.Text) & "', spname='" & UCase(GTBSESupp.Text) & "'"
-            Dim cmd As New SqlCommand(query, DBCon)
-            Dim d1 As DateTime = GDTPSE.Value
-            cmd.ExecuteNonQuery()
             query = "update products set quantity+=' " & GTBSEQty.Text & " ',DATE='" & GDTPSE.Value & "'"
+            Dim cmd As New SqlCommand(query, DBCon)
+            ' Dim d1 As DateTime = GDTPSE.Value
+            cmd.ExecuteNonQuery()
+            query = "update supplier set PPID='" & ppid & "', stockinby='" & UCase(GTBSeSib.Text) & "', spname='" & UCase(GTBSESupp.Text) & "'"
             Dim cmd2 As New SqlCommand(query, DBCon)
             cmd2.ExecuteNonQuery()
             MsgBox("data updated succesfully")

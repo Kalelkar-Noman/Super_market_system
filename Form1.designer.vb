@@ -106,10 +106,14 @@ Partial Class Form1
         Me.LabelMNO = New System.Windows.Forms.Label()
         Me.LabelCN = New System.Windows.Forms.Label()
         Me.LabelBill = New System.Windows.Forms.Label()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.amount = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TabPage4.SuspendLayout()
         CType(Me.DGVEStock, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelEStock.SuspendLayout()
@@ -140,8 +144,8 @@ Partial Class Form1
         Me.TabPage4.Controls.Add(Me.PanelEStock)
         Me.TabPage4.Location = New System.Drawing.Point(4, 22)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
-        Me.TabPage4.Size = New System.Drawing.Size(991, 418)
+        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage4.Size = New System.Drawing.Size(991, 429)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "STOCK"
         '
@@ -154,7 +158,7 @@ Partial Class Form1
         Me.DGVEStock.Location = New System.Drawing.Point(3, 66)
         Me.DGVEStock.Name = "DGVEStock"
         Me.DGVEStock.RowHeadersWidth = 51
-        Me.DGVEStock.Size = New System.Drawing.Size(981, 345)
+        Me.DGVEStock.Size = New System.Drawing.Size(981, 356)
         Me.DGVEStock.TabIndex = 2
         '
         'PanelEStock
@@ -182,7 +186,7 @@ Partial Class Form1
         Me.GBtnEStockCheck.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.GBtnEStockCheck.ForeColor = System.Drawing.Color.White
         Me.GBtnEStockCheck.Location = New System.Drawing.Point(609, 14)
-        Me.GBtnEStockCheck.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GBtnEStockCheck.Margin = New System.Windows.Forms.Padding(2)
         Me.GBtnEStockCheck.Name = "GBtnEStockCheck"
         Me.GBtnEStockCheck.Size = New System.Drawing.Size(135, 37)
         Me.GBtnEStockCheck.TabIndex = 34
@@ -200,7 +204,7 @@ Partial Class Form1
         Me.GBtnESearch.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.GBtnESearch.ForeColor = System.Drawing.Color.White
         Me.GBtnESearch.Location = New System.Drawing.Point(515, 13)
-        Me.GBtnESearch.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GBtnESearch.Margin = New System.Windows.Forms.Padding(2)
         Me.GBtnESearch.Name = "GBtnESearch"
         Me.GBtnESearch.Size = New System.Drawing.Size(81, 37)
         Me.GBtnESearch.TabIndex = 33
@@ -248,8 +252,8 @@ Partial Class Form1
         Me.TabPage3.Controls.Add(Me.PanelERet)
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
-        Me.TabPage3.Size = New System.Drawing.Size(991, 418)
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage3.Size = New System.Drawing.Size(991, 429)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "RETURN"
         '
@@ -262,7 +266,7 @@ Partial Class Form1
         Me.DGVERet.Location = New System.Drawing.Point(3, 90)
         Me.DGVERet.Name = "DGVERet"
         Me.DGVERet.RowHeadersWidth = 51
-        Me.DGVERet.Size = New System.Drawing.Size(981, 321)
+        Me.DGVERet.Size = New System.Drawing.Size(981, 332)
         Me.DGVERet.TabIndex = 2
         '
         'PanelERet
@@ -292,7 +296,7 @@ Partial Class Form1
         Me.GDTPRCD.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GDTPRCD.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.GDTPRCD.Location = New System.Drawing.Point(87, 40)
-        Me.GDTPRCD.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GDTPRCD.Margin = New System.Windows.Forms.Padding(2)
         Me.GDTPRCD.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.GDTPRCD.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.GDTPRCD.Name = "GDTPRCD"
@@ -312,7 +316,7 @@ Partial Class Form1
         Me.GBtnRSearch.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.GBtnRSearch.ForeColor = System.Drawing.Color.White
         Me.GBtnRSearch.Location = New System.Drawing.Point(282, 43)
-        Me.GBtnRSearch.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GBtnRSearch.Margin = New System.Windows.Forms.Padding(2)
         Me.GBtnRSearch.Name = "GBtnRSearch"
         Me.GBtnRSearch.Size = New System.Drawing.Size(75, 26)
         Me.GBtnRSearch.TabIndex = 35
@@ -392,7 +396,7 @@ Partial Class Form1
         Me.GBtnRClear.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.GBtnRClear.ForeColor = System.Drawing.Color.White
         Me.GBtnRClear.Location = New System.Drawing.Point(400, 46)
-        Me.GBtnRClear.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GBtnRClear.Margin = New System.Windows.Forms.Padding(2)
         Me.GBtnRClear.Name = "GBtnRClear"
         Me.GBtnRClear.Size = New System.Drawing.Size(70, 21)
         Me.GBtnRClear.TabIndex = 38
@@ -409,7 +413,7 @@ Partial Class Form1
         Me.GBtnRAdd.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.GBtnRAdd.ForeColor = System.Drawing.Color.White
         Me.GBtnRAdd.Location = New System.Drawing.Point(400, 14)
-        Me.GBtnRAdd.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GBtnRAdd.Margin = New System.Windows.Forms.Padding(2)
         Me.GBtnRAdd.Name = "GBtnRAdd"
         Me.GBtnRAdd.Size = New System.Drawing.Size(70, 24)
         Me.GBtnRAdd.TabIndex = 36
@@ -581,8 +585,8 @@ Partial Class Form1
         Me.TabPage2.Controls.Add(Me.PanelECD)
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
-        Me.TabPage2.Size = New System.Drawing.Size(991, 418)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(991, 429)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "CUSTOMER DETAIL"
         '
@@ -596,7 +600,7 @@ Partial Class Form1
         Me.DGVCD.Location = New System.Drawing.Point(3, 84)
         Me.DGVCD.Name = "DGVCD"
         Me.DGVCD.RowHeadersWidth = 51
-        Me.DGVCD.Size = New System.Drawing.Size(981, 327)
+        Me.DGVCD.Size = New System.Drawing.Size(981, 338)
         Me.DGVCD.TabIndex = 1
         '
         'PanelECD
@@ -625,7 +629,7 @@ Partial Class Form1
         Me.GBtnECDSearch.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.GBtnECDSearch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.GBtnECDSearch.Location = New System.Drawing.Point(687, 16)
-        Me.GBtnECDSearch.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GBtnECDSearch.Margin = New System.Windows.Forms.Padding(2)
         Me.GBtnECDSearch.Name = "GBtnECDSearch"
         Me.GBtnECDSearch.Size = New System.Drawing.Size(106, 40)
         Me.GBtnECDSearch.TabIndex = 32
@@ -708,7 +712,7 @@ Partial Class Form1
         Me.TabConrolEMP.Location = New System.Drawing.Point(0, 0)
         Me.TabConrolEMP.Name = "TabConrolEMP"
         Me.TabConrolEMP.SelectedIndex = 0
-        Me.TabConrolEMP.Size = New System.Drawing.Size(999, 444)
+        Me.TabConrolEMP.Size = New System.Drawing.Size(999, 455)
         Me.TabConrolEMP.TabIndex = 0
         '
         'TabPage1
@@ -720,8 +724,8 @@ Partial Class Form1
         Me.TabPage1.Controls.Add(Me.GPEEnter)
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
-        Me.TabPage1.Size = New System.Drawing.Size(991, 418)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(991, 429)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "BILLING ENTRY"
         '
@@ -730,9 +734,9 @@ Partial Class Form1
         Me.Guna2Panel1.Controls.Add(Me.Guna2DataGridView1)
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel1.Location = New System.Drawing.Point(3, 231)
-        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(835, 180)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(835, 191)
         Me.Guna2Panel1.TabIndex = 59
         '
         'Guna2DataGridView1
@@ -749,9 +753,9 @@ Partial Class Form1
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.Guna2DataGridView1.ColumnHeadersHeight = 4
+        Me.Guna2DataGridView1.ColumnHeadersHeight = 25
         Me.Guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.Guna2DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.amount})
+        Me.Guna2DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column4, Me.Column5, Me.Column6, Me.Column1, Me.Column2, Me.Column3, Me.amount, Me.Column7})
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -763,13 +767,13 @@ Partial Class Form1
         Me.Guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2DataGridView1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2DataGridView1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
         Me.Guna2DataGridView1.ReadOnly = True
         Me.Guna2DataGridView1.RowHeadersVisible = False
         Me.Guna2DataGridView1.RowHeadersWidth = 51
         Me.Guna2DataGridView1.RowTemplate.Height = 24
-        Me.Guna2DataGridView1.Size = New System.Drawing.Size(835, 180)
+        Me.Guna2DataGridView1.Size = New System.Drawing.Size(835, 191)
         Me.Guna2DataGridView1.TabIndex = 0
         Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -783,7 +787,7 @@ Partial Class Form1
         Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
         Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 25
         Me.Guna2DataGridView1.ThemeStyle.ReadOnly = True
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
@@ -801,9 +805,9 @@ Partial Class Form1
         Me.GPRightBottom.Controls.Add(Me.GBtnEDel)
         Me.GPRightBottom.Dock = System.Windows.Forms.DockStyle.Right
         Me.GPRightBottom.Location = New System.Drawing.Point(838, 231)
-        Me.GPRightBottom.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GPRightBottom.Margin = New System.Windows.Forms.Padding(2)
         Me.GPRightBottom.Name = "GPRightBottom"
-        Me.GPRightBottom.Size = New System.Drawing.Size(146, 180)
+        Me.GPRightBottom.Size = New System.Drawing.Size(146, 191)
         Me.GPRightBottom.TabIndex = 56
         '
         'GBtnAdd
@@ -818,8 +822,8 @@ Partial Class Form1
         Me.GBtnAdd.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.GBtnAdd.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.GBtnAdd.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GBtnAdd.Location = New System.Drawing.Point(41, 27)
-        Me.GBtnAdd.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GBtnAdd.Location = New System.Drawing.Point(41, 32)
+        Me.GBtnAdd.Margin = New System.Windows.Forms.Padding(2)
         Me.GBtnAdd.Name = "GBtnAdd"
         Me.GBtnAdd.ShadowDecoration.Enabled = True
         Me.GBtnAdd.Size = New System.Drawing.Size(78, 37)
@@ -838,8 +842,8 @@ Partial Class Form1
         Me.GBtnESav.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.GBtnESav.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.GBtnESav.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GBtnESav.Location = New System.Drawing.Point(41, 123)
-        Me.GBtnESav.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GBtnESav.Location = New System.Drawing.Point(41, 128)
+        Me.GBtnESav.Margin = New System.Windows.Forms.Padding(2)
         Me.GBtnESav.Name = "GBtnESav"
         Me.GBtnESav.ShadowDecoration.Enabled = True
         Me.GBtnESav.Size = New System.Drawing.Size(78, 37)
@@ -858,8 +862,8 @@ Partial Class Form1
         Me.GBtnEDel.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.GBtnEDel.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.GBtnEDel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GBtnEDel.Location = New System.Drawing.Point(40, 75)
-        Me.GBtnEDel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GBtnEDel.Location = New System.Drawing.Point(40, 80)
+        Me.GBtnEDel.Margin = New System.Windows.Forms.Padding(2)
         Me.GBtnEDel.Name = "GBtnEDel"
         Me.GBtnEDel.ShadowDecoration.Enabled = True
         Me.GBtnEDel.Size = New System.Drawing.Size(78, 37)
@@ -899,7 +903,7 @@ Partial Class Form1
         Me.GPEEnter.Controls.Add(Me.LabelBill)
         Me.GPEEnter.Dock = System.Windows.Forms.DockStyle.Top
         Me.GPEEnter.Location = New System.Drawing.Point(3, 3)
-        Me.GPEEnter.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GPEEnter.Margin = New System.Windows.Forms.Padding(2)
         Me.GPEEnter.Name = "GPEEnter"
         Me.GPEEnter.Size = New System.Drawing.Size(981, 228)
         Me.GPEEnter.TabIndex = 58
@@ -930,7 +934,7 @@ Partial Class Form1
         Me.GDataGridVBillP.DefaultCellStyle = DataGridViewCellStyle6
         Me.GDataGridVBillP.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GDataGridVBillP.Location = New System.Drawing.Point(474, 11)
-        Me.GDataGridVBillP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GDataGridVBillP.Margin = New System.Windows.Forms.Padding(2)
         Me.GDataGridVBillP.MaximumSize = New System.Drawing.Size(900, 203)
         Me.GDataGridVBillP.MinimumSize = New System.Drawing.Size(352, 204)
         Me.GDataGridVBillP.Name = "GDataGridVBillP"
@@ -973,7 +977,7 @@ Partial Class Form1
         Me.GBtnEAdd.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GBtnEAdd.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.GBtnEAdd.Location = New System.Drawing.Point(369, 182)
-        Me.GBtnEAdd.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GBtnEAdd.Margin = New System.Windows.Forms.Padding(2)
         Me.GBtnEAdd.Name = "GBtnEAdd"
         Me.GBtnEAdd.ShadowDecoration.Enabled = True
         Me.GBtnEAdd.Size = New System.Drawing.Size(82, 37)
@@ -989,7 +993,7 @@ Partial Class Form1
         Me.GPRightUpper.Controls.Add(Me.PicECash)
         Me.GPRightUpper.Controls.Add(Me.LabelCash)
         Me.GPRightUpper.Location = New System.Drawing.Point(835, 0)
-        Me.GPRightUpper.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GPRightUpper.Margin = New System.Windows.Forms.Padding(2)
         Me.GPRightUpper.Name = "GPRightUpper"
         Me.GPRightUpper.Size = New System.Drawing.Size(146, 228)
         Me.GPRightUpper.TabIndex = 57
@@ -1015,7 +1019,7 @@ Partial Class Form1
         Me.GBtnEPrint.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(181, Byte), Integer))
         Me.GBtnEPrint.HoverState.ForeColor = System.Drawing.Color.White
         Me.GBtnEPrint.Location = New System.Drawing.Point(40, 118)
-        Me.GBtnEPrint.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GBtnEPrint.Margin = New System.Windows.Forms.Padding(2)
         Me.GBtnEPrint.Name = "GBtnEPrint"
         Me.GBtnEPrint.ShadowDecoration.BorderRadius = 13
         Me.GBtnEPrint.ShadowDecoration.Color = System.Drawing.Color.Empty
@@ -1039,7 +1043,7 @@ Partial Class Form1
         Me.GBtnERes.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.GBtnERes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.GBtnERes.Location = New System.Drawing.Point(40, 170)
-        Me.GBtnERes.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GBtnERes.Margin = New System.Windows.Forms.Padding(2)
         Me.GBtnERes.Name = "GBtnERes"
         Me.GBtnERes.ShadowDecoration.Enabled = True
         Me.GBtnERes.Size = New System.Drawing.Size(78, 37)
@@ -1107,7 +1111,7 @@ Partial Class Form1
         Me.GBtnEClear.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GBtnEClear.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.GBtnEClear.Location = New System.Drawing.Point(369, 136)
-        Me.GBtnEClear.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GBtnEClear.Margin = New System.Windows.Forms.Padding(2)
         Me.GBtnEClear.Name = "GBtnEClear"
         Me.GBtnEClear.ShadowDecoration.BorderRadius = 0
         Me.GBtnEClear.ShadowDecoration.Color = System.Drawing.Color.Transparent
@@ -1312,7 +1316,7 @@ Partial Class Form1
         Me.GDTPEBD1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GDTPEBD1.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.GDTPEBD1.Location = New System.Drawing.Point(160, 112)
-        Me.GDTPEBD1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GDTPEBD1.Margin = New System.Windows.Forms.Padding(2)
         Me.GDTPEBD1.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.GDTPEBD1.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.GDTPEBD1.Name = "GDTPEBD1"
@@ -1459,36 +1463,76 @@ Partial Class Form1
         Me.LabelBill.TabIndex = 51
         Me.LabelBill.Text = "Bill No"
         '
+        'Column4
+        '
+        Me.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column4.DataPropertyName = "billno"
+        Me.Column4.HeaderText = "Bill No."
+        Me.Column4.Name = "Column4"
+        Me.Column4.ReadOnly = True
+        '
+        'Column5
+        '
+        Me.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column5.DataPropertyName = "custname"
+        Me.Column5.HeaderText = "Customer Name"
+        Me.Column5.Name = "Column5"
+        Me.Column5.ReadOnly = True
+        '
+        'Column6
+        '
+        Me.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column6.DataPropertyName = "phoneno"
+        Me.Column6.HeaderText = "Mobile No."
+        Me.Column6.Name = "Column6"
+        Me.Column6.ReadOnly = True
+        '
         'Column1
         '
+        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column1.DataPropertyName = "productid"
         Me.Column1.HeaderText = "Product ID"
         Me.Column1.Name = "Column1"
         Me.Column1.ReadOnly = True
         '
         'Column2
         '
+        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column2.DataPropertyName = "productname"
         Me.Column2.HeaderText = "product name"
         Me.Column2.Name = "Column2"
         Me.Column2.ReadOnly = True
         '
         'Column3
         '
+        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column3.DataPropertyName = "QUANTITY"
         Me.Column3.HeaderText = "quantity"
         Me.Column3.Name = "Column3"
         Me.Column3.ReadOnly = True
         '
         'amount
         '
-        Me.amount.HeaderText = "amount"
+        Me.amount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.amount.DataPropertyName = "amount"
+        Me.amount.HeaderText = "Total amount"
         Me.amount.Name = "amount"
         Me.amount.ReadOnly = True
+        '
+        'Column7
+        '
+        Me.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column7.DataPropertyName = "DISCOUNT"
+        Me.Column7.HeaderText = "Discount"
+        Me.Column7.Name = "Column7"
+        Me.Column7.ReadOnly = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.MintCream
-        Me.ClientSize = New System.Drawing.Size(999, 444)
+        Me.ClientSize = New System.Drawing.Size(999, 455)
         Me.Controls.Add(Me.TabConrolEMP)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -1595,8 +1639,12 @@ Partial Class Form1
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents GBtnAdd As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents amount As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewTextBoxColumn
 End Class
