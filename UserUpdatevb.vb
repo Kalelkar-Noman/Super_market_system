@@ -1,9 +1,6 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class UserUpdatevb
-    Private Sub UserUpdatevb_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
     Sub clears()
         GTbAdd.Clear()
         GTbUname.Clear()
@@ -35,12 +32,12 @@ Public Class UserUpdatevb
             update_prls()
             clears()
         Else
-                MsgBox("passwords not matched")
-            End If
+            MsgBox("passwords not matched")
+        End If
 
     End Sub
 
     Private Sub GBtnUX1_Click(sender As Object, e As EventArgs) Handles GBtnUX1.Click
-        Me.Hide()
+        Me.Close()
     End Sub
 End Class

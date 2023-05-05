@@ -23,7 +23,7 @@
         If PBloading1.Value > 100 Then
             Lblstatustext.Text = "Lauching Application..."
             User_Signin.Show()
-            Me.Hide()
+            Me.Close()
             Timer1.Dispose()
 
         End If
@@ -31,6 +31,5 @@
 
     Private Sub LOGIN_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Timer1.Start()
-
     End Sub
 End Class

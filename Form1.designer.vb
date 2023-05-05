@@ -648,13 +648,13 @@ Partial Class Form1
         Me.GBtnESav.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.GBtnESav.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.GBtnESav.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GBtnESav.Location = New System.Drawing.Point(41, 128)
+        Me.GBtnESav.Location = New System.Drawing.Point(22, 128)
         Me.GBtnESav.Margin = New System.Windows.Forms.Padding(2)
         Me.GBtnESav.Name = "GBtnESav"
         Me.GBtnESav.ShadowDecoration.Enabled = True
-        Me.GBtnESav.Size = New System.Drawing.Size(78, 37)
+        Me.GBtnESav.Size = New System.Drawing.Size(97, 37)
         Me.GBtnESav.TabIndex = 55
-        Me.GBtnESav.Text = "Save"
+        Me.GBtnESav.Text = "LOG OUT"
         '
         'GBtnEDel
         '

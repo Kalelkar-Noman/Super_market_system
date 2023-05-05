@@ -12,11 +12,4 @@ Public Class Stock_Record
         DBCon.Close()
     End Sub
 
-    Private Sub GLabelRecordTo_Click(sender As Object, e As EventArgs) Handles GLabelRecordTo.Click
-
-    End Sub
-
-    Private Sub GLabelRecordF_Click(sender As Object, e As EventArgs) Handles GLabelRecordF.Click
-
-    End Sub
 End Class

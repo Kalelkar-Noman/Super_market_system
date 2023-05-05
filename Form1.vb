@@ -1,5 +1,4 @@
 ﻿Imports System.Data.SqlClient
-
 Public Class Form1
     Dim pdn As String = ""
     Dim pid As Integer = 0
@@ -10,10 +9,6 @@ Public Class Form1
     Dim sltcell2 As Integer = -2
     Dim sltcell3 As Integer = -2
     Dim slt As Boolean = False
-    Private Sub PictureBQr_Click(sender As Object, e As EventArgs) Handles PictureBQr.Click
-
-
-    End Sub
 
     Private Sub GTbEBEQty_TextChanged(sender As Object, e As EventArgs) Handles GTbEBEQty.TextChanged
         If GTbEBEQty.Text = "0" Or GTbEBEQty.Text = "1" Then
@@ -39,8 +34,6 @@ Public Class Form1
         Finally
             DBCon.Close()
         End Try
-
-
     End Sub
     Private Sub GBtnEAdd_Click(sender As Object, e As EventArgs) Handles GBtnEAdd.Click
         DBCon.Open()
@@ -51,13 +44,12 @@ Public Class Form1
             qty = dr("quantity")
         End If
         DBCon.Close()
-
         Try
             If GTbEBEQty.Text > qty Then
                 MsgBox("quantity is greater")
             Else
                 DBCon.Open()
-                query = "insert into sellhistory values('" & GTbEBEBN.Text & "','" & GTbEBEMN.Text & "','" & pid & "','" & GTbEBEPN.Text & "','" & GTbEBEQty.Text & "','" & GTbEBECA.Text & "','" & GTbEBETM.Text & "','" & dist & "')"
+                query = "insert into sellhistory values('" & GTbEBEBN.Text & "','" & GTbEBEMN.Text & "','" & pid & "','" & GTbEBEPN.Text & "','" & GTbEBEQty.Text & "','" & GTbEBECA.Text & "','" & GTbEBETM.Text & "','" & dist & "','" & GDTPEBD1.Value & "')"
 
                 cmd.ExecuteNonQuery()
                 query = "update products set quantity=quantity - '" & GTbEBEQty.Text & "' where pid='" & pid & "'"
@@ -83,7 +75,6 @@ Public Class Form1
         DGVCD.DataSource = dt
         DBCon.Close()
     End Sub
-
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
         DBCon.Open()
         query = "select billno,custname from sellhistory where billno='" & GTbECDCN.Text & "' "
@@ -94,11 +85,6 @@ Public Class Form1
         DGVCD.DataSource = dt
         DBCon.Close()
     End Sub
-
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub GBtnEClear_Click(sender As Object, e As EventArgs) Handles GBtnEClear.Click
         Try
             DBCon.Open()
@@ -147,11 +133,6 @@ Public Class Form1
         DGVEStock.DataSource = dt
         DBCon.Close()
     End Sub
-
-    Private Sub Guna2DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellContentClick
-
-    End Sub
-
     Private Sub Guna2DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellClick
         If e.RowIndex >= 0 Then
             slt = True
@@ -187,5 +168,10 @@ Public Class Form1
         Else
             MsgBox("Please Select a data")
         End If
+    End Sub
+
+    Private Sub GBtnESav_Click(sender As Object, e As EventArgs) Handles GBtnESav.Click
+        User_Signin.Show()
+        Me.Close()
     End Sub
 End Class

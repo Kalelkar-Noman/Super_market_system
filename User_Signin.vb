@@ -1,9 +1,5 @@
 ﻿Imports System.Data.SqlClient
-Imports System.Security.Cryptography
-
 Public Class User_Signin
-
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         DBCon.Open()
         Try
@@ -31,18 +27,11 @@ Public Class User_Signin
             If a1 = False Then
                 MsgBox("invalid username or password")
             Else
-                Me.Hide()
+                Me.Close()
             End If
         Catch ex As Exception
             MsgBox(ex.Message)
             DBCon.Close()
         End Try
-    End Sub
-    Private Sub User_Signin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
-
     End Sub
 End Class

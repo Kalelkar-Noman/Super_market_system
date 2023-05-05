@@ -22,14 +22,14 @@ Partial Class Stock_In
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TabCStock = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.GBtnSLAdd = New Guna.UI2.WinForms.Guna2Button()
@@ -75,21 +75,21 @@ Partial Class Stock_In
         Me.TabCStock.Controls.Add(Me.TabPage2)
         Me.TabCStock.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabCStock.Location = New System.Drawing.Point(0, 0)
-        Me.TabCStock.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TabCStock.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TabCStock.Name = "TabCStock"
         Me.TabCStock.SelectedIndex = 0
-        Me.TabCStock.Size = New System.Drawing.Size(931, 576)
+        Me.TabCStock.Size = New System.Drawing.Size(698, 468)
         Me.TabCStock.TabIndex = 0
         '
         'TabPage1
         '
         Me.TabPage1.Controls.Add(Me.GBtnSLAdd)
         Me.TabPage1.Controls.Add(Me.GDataGridStockLis)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TabPage1.Size = New System.Drawing.Size(923, 547)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPage1.Size = New System.Drawing.Size(690, 442)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Stock List"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -107,14 +107,14 @@ Partial Class Stock_In
         Me.GBtnSLAdd.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.GBtnSLAdd.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.GBtnSLAdd.ImageSize = New System.Drawing.Size(35, 35)
-        Me.GBtnSLAdd.Location = New System.Drawing.Point(808, 485)
-        Me.GBtnSLAdd.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GBtnSLAdd.Location = New System.Drawing.Point(585, 394)
+        Me.GBtnSLAdd.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GBtnSLAdd.Name = "GBtnSLAdd"
         Me.GBtnSLAdd.ShadowDecoration.BorderRadius = 17
         Me.GBtnSLAdd.ShadowDecoration.Color = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.GBtnSLAdd.ShadowDecoration.Depth = 20
         Me.GBtnSLAdd.ShadowDecoration.Enabled = True
-        Me.GBtnSLAdd.Size = New System.Drawing.Size(103, 50)
+        Me.GBtnSLAdd.Size = New System.Drawing.Size(98, 41)
         Me.GBtnSLAdd.TabIndex = 1
         Me.GBtnSLAdd.Text = "REFRESH"
         Me.GBtnSLAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -124,51 +124,51 @@ Partial Class Stock_In
         Me.GDataGridStockLis.AllowUserToAddRows = False
         Me.GDataGridStockLis.AllowUserToDeleteRows = False
         Me.GDataGridStockLis.AllowUserToResizeRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.GDataGridStockLis.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle13.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle13.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.GDataGridStockLis.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle13
         Me.GDataGridStockLis.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(58, Byte), Integer))
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.GDataGridStockLis.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.GDataGridStockLis.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
         Me.GDataGridStockLis.ColumnHeadersHeight = 18
         Me.GDataGridStockLis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Me.GDataGridStockLis.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column9, Me.Column10, Me.Column11, Me.Column12})
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(232, Byte), Integer), CType(CType(232, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.GDataGridStockLis.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle15.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(232, Byte), Integer), CType(CType(232, Byte), Integer))
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.GDataGridStockLis.DefaultCellStyle = DataGridViewCellStyle15
         Me.GDataGridStockLis.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GDataGridStockLis.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GDataGridStockLis.Location = New System.Drawing.Point(3, 2)
-        Me.GDataGridStockLis.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GDataGridStockLis.Location = New System.Drawing.Point(2, 2)
+        Me.GDataGridStockLis.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GDataGridStockLis.Name = "GDataGridStockLis"
         Me.GDataGridStockLis.ReadOnly = True
         Me.GDataGridStockLis.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.GDataGridStockLis.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle16.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle16.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.GDataGridStockLis.RowHeadersDefaultCellStyle = DataGridViewCellStyle16
         Me.GDataGridStockLis.RowHeadersVisible = False
         Me.GDataGridStockLis.RowHeadersWidth = 51
         Me.GDataGridStockLis.RowTemplate.Height = 24
-        Me.GDataGridStockLis.Size = New System.Drawing.Size(917, 543)
+        Me.GDataGridStockLis.Size = New System.Drawing.Size(686, 438)
         Me.GDataGridStockLis.TabIndex = 0
         Me.GDataGridStockLis.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.GDataGridStockLis.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -228,11 +228,11 @@ Partial Class Stock_In
         '
         Me.TabPage2.Controls.Add(Me.GDataGridStockEn)
         Me.TabPage2.Controls.Add(Me.GPanelSEntry)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TabPage2.Size = New System.Drawing.Size(923, 547)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPage2.Size = New System.Drawing.Size(690, 442)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Stock Entry"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -242,51 +242,51 @@ Partial Class Stock_In
         Me.GDataGridStockEn.AllowUserToAddRows = False
         Me.GDataGridStockEn.AllowUserToDeleteRows = False
         Me.GDataGridStockEn.AllowUserToResizeRows = False
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.GDataGridStockEn.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.GDataGridStockEn.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle9
         Me.GDataGridStockEn.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(58, Byte), Integer))
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.GDataGridStockEn.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.GDataGridStockEn.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
         Me.GDataGridStockEn.ColumnHeadersHeight = 18
         Me.GDataGridStockEn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Me.GDataGridStockEn.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7})
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(232, Byte), Integer), CType(CType(232, Byte), Integer))
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.GDataGridStockEn.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(232, Byte), Integer), CType(CType(232, Byte), Integer))
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.GDataGridStockEn.DefaultCellStyle = DataGridViewCellStyle11
         Me.GDataGridStockEn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GDataGridStockEn.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GDataGridStockEn.Location = New System.Drawing.Point(3, 190)
-        Me.GDataGridStockEn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GDataGridStockEn.Location = New System.Drawing.Point(2, 155)
+        Me.GDataGridStockEn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GDataGridStockEn.Name = "GDataGridStockEn"
         Me.GDataGridStockEn.ReadOnly = True
         Me.GDataGridStockEn.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.GDataGridStockEn.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.GDataGridStockEn.RowHeadersDefaultCellStyle = DataGridViewCellStyle12
         Me.GDataGridStockEn.RowHeadersVisible = False
         Me.GDataGridStockEn.RowHeadersWidth = 51
         Me.GDataGridStockEn.RowTemplate.Height = 24
-        Me.GDataGridStockEn.Size = New System.Drawing.Size(917, 355)
+        Me.GDataGridStockEn.Size = New System.Drawing.Size(686, 285)
         Me.GDataGridStockEn.TabIndex = 1
         Me.GDataGridStockEn.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.GDataGridStockEn.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -376,10 +376,10 @@ Partial Class Stock_In
         Me.GPanelSEntry.Controls.Add(Me.GTBSEpID)
         Me.GPanelSEntry.Controls.Add(Me.GTBSeSib)
         Me.GPanelSEntry.Dock = System.Windows.Forms.DockStyle.Top
-        Me.GPanelSEntry.Location = New System.Drawing.Point(3, 2)
-        Me.GPanelSEntry.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GPanelSEntry.Location = New System.Drawing.Point(2, 2)
+        Me.GPanelSEntry.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GPanelSEntry.Name = "GPanelSEntry"
-        Me.GPanelSEntry.Size = New System.Drawing.Size(917, 188)
+        Me.GPanelSEntry.Size = New System.Drawing.Size(686, 153)
         Me.GPanelSEntry.TabIndex = 0
         '
         'GBtnSeqty
@@ -387,9 +387,10 @@ Partial Class Stock_In
         Me.GBtnSeqty.AutoSize = True
         Me.GBtnSeqty.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold)
         Me.GBtnSeqty.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GBtnSeqty.Location = New System.Drawing.Point(499, 139)
+        Me.GBtnSeqty.Location = New System.Drawing.Point(374, 113)
+        Me.GBtnSeqty.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.GBtnSeqty.Name = "GBtnSeqty"
-        Me.GBtnSeqty.Size = New System.Drawing.Size(54, 16)
+        Me.GBtnSeqty.Size = New System.Drawing.Size(47, 13)
         Me.GBtnSeqty.TabIndex = 25
         Me.GBtnSeqty.Text = "Quntity"
         '
@@ -398,9 +399,10 @@ Partial Class Stock_In
         Me.GBtnSESID.AutoSize = True
         Me.GBtnSESID.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold)
         Me.GBtnSESID.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GBtnSESID.Location = New System.Drawing.Point(481, 73)
+        Me.GBtnSESID.Location = New System.Drawing.Point(361, 59)
+        Me.GBtnSESID.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.GBtnSESID.Name = "GBtnSESID"
-        Me.GBtnSESID.Size = New System.Drawing.Size(99, 16)
+        Me.GBtnSESID.Size = New System.Drawing.Size(86, 13)
         Me.GBtnSESID.TabIndex = 24
         Me.GBtnSESID.Text = "Stock In Date"
         '
@@ -409,9 +411,10 @@ Partial Class Stock_In
         Me.GBtnSESupp.AutoSize = True
         Me.GBtnSESupp.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold)
         Me.GBtnSESupp.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GBtnSESupp.Location = New System.Drawing.Point(481, 26)
+        Me.GBtnSESupp.Location = New System.Drawing.Point(361, 21)
+        Me.GBtnSESupp.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.GBtnSESupp.Name = "GBtnSESupp"
-        Me.GBtnSESupp.Size = New System.Drawing.Size(65, 16)
+        Me.GBtnSESupp.Size = New System.Drawing.Size(53, 13)
         Me.GBtnSESupp.TabIndex = 23
         Me.GBtnSESupp.Text = "Supplier"
         '
@@ -420,9 +423,10 @@ Partial Class Stock_In
         Me.GBtnSeProName.AutoSize = True
         Me.GBtnSeProName.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold)
         Me.GBtnSeProName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GBtnSeProName.Location = New System.Drawing.Point(67, 148)
+        Me.GBtnSeProName.Location = New System.Drawing.Point(50, 120)
+        Me.GBtnSeProName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.GBtnSeProName.Name = "GBtnSeProName"
-        Me.GBtnSeProName.Size = New System.Drawing.Size(105, 16)
+        Me.GBtnSeProName.Size = New System.Drawing.Size(87, 13)
         Me.GBtnSeProName.TabIndex = 22
         Me.GBtnSeProName.Text = "Product Name"
         '
@@ -431,9 +435,10 @@ Partial Class Stock_In
         Me.GBtnSEPID.AutoSize = True
         Me.GBtnSEPID.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold)
         Me.GBtnSEPID.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GBtnSEPID.Location = New System.Drawing.Point(67, 88)
+        Me.GBtnSEPID.Location = New System.Drawing.Point(50, 72)
+        Me.GBtnSEPID.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.GBtnSEPID.Name = "GBtnSEPID"
-        Me.GBtnSEPID.Size = New System.Drawing.Size(79, 16)
+        Me.GBtnSEPID.Size = New System.Drawing.Size(68, 13)
         Me.GBtnSEPID.TabIndex = 21
         Me.GBtnSEPID.Text = "Product ID"
         '
@@ -442,9 +447,10 @@ Partial Class Stock_In
         Me.GBtnSIB.AutoSize = True
         Me.GBtnSIB.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold)
         Me.GBtnSIB.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GBtnSIB.Location = New System.Drawing.Point(67, 34)
+        Me.GBtnSIB.Location = New System.Drawing.Point(50, 28)
+        Me.GBtnSIB.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.GBtnSIB.Name = "GBtnSIB"
-        Me.GBtnSIB.Size = New System.Drawing.Size(84, 16)
+        Me.GBtnSIB.Size = New System.Drawing.Size(73, 13)
         Me.GBtnSIB.TabIndex = 20
         Me.GBtnSIB.Text = "Stock In By"
         '
@@ -460,14 +466,14 @@ Partial Class Stock_In
         Me.GBtnSEAdd.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.GBtnSEAdd.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.GBtnSEAdd.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GBtnSEAdd.Location = New System.Drawing.Point(705, 126)
-        Me.GBtnSEAdd.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GBtnSEAdd.Location = New System.Drawing.Point(529, 102)
+        Me.GBtnSEAdd.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GBtnSEAdd.Name = "GBtnSEAdd"
         Me.GBtnSEAdd.ShadowDecoration.BorderRadius = 17
         Me.GBtnSEAdd.ShadowDecoration.Color = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.GBtnSEAdd.ShadowDecoration.Depth = 20
         Me.GBtnSEAdd.ShadowDecoration.Enabled = True
-        Me.GBtnSEAdd.Size = New System.Drawing.Size(134, 53)
+        Me.GBtnSEAdd.Size = New System.Drawing.Size(100, 43)
         Me.GBtnSEAdd.TabIndex = 19
         Me.GBtnSEAdd.Text = "Add Stock"
         '
@@ -475,9 +481,10 @@ Partial Class Stock_In
         '
         Me.LinkSe.AutoSize = True
         Me.LinkSe.LinkColor = System.Drawing.Color.White
-        Me.LinkSe.Location = New System.Drawing.Point(255, 112)
+        Me.LinkSe.Location = New System.Drawing.Point(191, 91)
+        Me.LinkSe.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LinkSe.Name = "LinkSe"
-        Me.LinkSe.Size = New System.Drawing.Size(127, 16)
+        Me.LinkSe.Size = New System.Drawing.Size(105, 13)
         Me.LinkSe.TabIndex = 18
         Me.LinkSe.TabStop = True
         Me.LinkSe.Text = "[ Search Product Id ]"
@@ -496,13 +503,13 @@ Partial Class Stock_In
         Me.GTextSEpn.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GTextSEpn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GTextSEpn.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTextSEpn.Location = New System.Drawing.Point(216, 139)
-        Me.GTextSEpn.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GTextSEpn.Location = New System.Drawing.Point(162, 113)
+        Me.GTextSEpn.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GTextSEpn.Name = "GTextSEpn"
         Me.GTextSEpn.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.GTextSEpn.PlaceholderText = ""
         Me.GTextSEpn.SelectedText = ""
-        Me.GTextSEpn.Size = New System.Drawing.Size(229, 36)
+        Me.GTextSEpn.Size = New System.Drawing.Size(172, 29)
         Me.GTextSEpn.TabIndex = 17
         '
         'GDTPSE
@@ -512,12 +519,12 @@ Partial Class Stock_In
         Me.GDTPSE.FillColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.GDTPSE.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GDTPSE.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.GDTPSE.Location = New System.Drawing.Point(596, 65)
-        Me.GDTPSE.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GDTPSE.Location = New System.Drawing.Point(447, 53)
+        Me.GDTPSE.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GDTPSE.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.GDTPSE.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.GDTPSE.Name = "GDTPSE"
-        Me.GDTPSE.Size = New System.Drawing.Size(227, 43)
+        Me.GDTPSE.Size = New System.Drawing.Size(170, 35)
         Me.GDTPSE.TabIndex = 15
         Me.GDTPSE.Value = New Date(2023, 4, 28, 0, 0, 0, 0)
         '
@@ -533,13 +540,13 @@ Partial Class Stock_In
         Me.GTBSEQty.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GTBSEQty.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GTBSEQty.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTBSEQty.Location = New System.Drawing.Point(596, 139)
-        Me.GTBSEQty.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GTBSEQty.Location = New System.Drawing.Point(447, 113)
+        Me.GTBSEQty.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GTBSEQty.Name = "GTBSEQty"
         Me.GTBSEQty.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.GTBSEQty.PlaceholderText = ""
         Me.GTBSEQty.SelectedText = ""
-        Me.GTBSEQty.Size = New System.Drawing.Size(83, 36)
+        Me.GTBSEQty.Size = New System.Drawing.Size(62, 29)
         Me.GTBSEQty.TabIndex = 8
         '
         'GTBSESupp
@@ -554,13 +561,13 @@ Partial Class Stock_In
         Me.GTBSESupp.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GTBSESupp.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GTBSESupp.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTBSESupp.Location = New System.Drawing.Point(596, 14)
-        Me.GTBSESupp.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GTBSESupp.Location = New System.Drawing.Point(447, 11)
+        Me.GTBSESupp.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GTBSESupp.Name = "GTBSESupp"
         Me.GTBSESupp.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.GTBSESupp.PlaceholderText = ""
         Me.GTBSESupp.SelectedText = ""
-        Me.GTBSESupp.Size = New System.Drawing.Size(229, 36)
+        Me.GTBSESupp.Size = New System.Drawing.Size(172, 29)
         Me.GTBSESupp.TabIndex = 7
         '
         'GTBSEpID
@@ -575,13 +582,13 @@ Partial Class Stock_In
         Me.GTBSEpID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GTBSEpID.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GTBSEpID.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTBSEpID.Location = New System.Drawing.Point(216, 68)
-        Me.GTBSEpID.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GTBSEpID.Location = New System.Drawing.Point(162, 55)
+        Me.GTBSEpID.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GTBSEpID.Name = "GTBSEpID"
         Me.GTBSEpID.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.GTBSEpID.PlaceholderText = ""
         Me.GTBSEpID.SelectedText = ""
-        Me.GTBSEpID.Size = New System.Drawing.Size(229, 36)
+        Me.GTBSEpID.Size = New System.Drawing.Size(172, 29)
         Me.GTBSEpID.TabIndex = 6
         '
         'GTBSeSib
@@ -596,24 +603,24 @@ Partial Class Stock_In
         Me.GTBSeSib.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GTBSeSib.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GTBSeSib.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTBSeSib.Location = New System.Drawing.Point(216, 14)
-        Me.GTBSeSib.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GTBSeSib.Location = New System.Drawing.Point(162, 11)
+        Me.GTBSeSib.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GTBSeSib.Name = "GTBSeSib"
         Me.GTBSeSib.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.GTBSeSib.PlaceholderText = ""
         Me.GTBSeSib.SelectedText = ""
-        Me.GTBSeSib.Size = New System.Drawing.Size(229, 36)
+        Me.GTBSeSib.Size = New System.Drawing.Size(172, 29)
         Me.GTBSeSib.TabIndex = 5
         '
         'Stock_In
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(931, 576)
+        Me.ClientSize = New System.Drawing.Size(698, 468)
         Me.Controls.Add(Me.TabCStock)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Stock_In"
         Me.Text = "Stock_In"
         Me.TabCStock.ResumeLayout(False)

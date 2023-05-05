@@ -26,7 +26,7 @@ Public Class Product_Add
                 DBCon.Close()
             End If
         End Try
-        Me.Hide()
+        Me.Close()
     End Sub
     Sub insrt_prls()
         Try
@@ -46,7 +46,7 @@ Public Class Product_Add
                 DBCon.Close()
             End If
         End Try
-        Me.Hide()
+        Me.Close()
     End Sub
     Private Sub GBtnPASave_Click(sender As Object, e As EventArgs) Handles GBtnPASave.Click
         If listap = 1 Then
@@ -57,26 +57,10 @@ Public Class Product_Add
     End Sub
 
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub GBtnPACle_Click(sender As Object, e As EventArgs) Handles GBtnPACle.Click
         clears()
-    End Sub
-
-    Private Sub Product_Add_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub GLablePAPId_Click(sender As Object, e As EventArgs) Handles GLablePAPId.Click
-
-    End Sub
-
-    Private Sub GLablePADis_Click(sender As Object, e As EventArgs) Handles GLablePADis.Click
-
-    End Sub
-
-    Private Sub GLablePACat_Click(sender As Object, e As EventArgs) Handles GLablePACat.Click
-
     End Sub
 End Class

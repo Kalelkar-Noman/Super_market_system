@@ -47,6 +47,6 @@ Public Class ResetPass
     End Sub
 
     Private Sub GBtnRPX1_Click(sender As Object, e As EventArgs) Handles GBtnRPX1.Click
-        Me.Hide()
+        Me.Close()
     End Sub
 End Class

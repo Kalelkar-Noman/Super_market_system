@@ -48,7 +48,7 @@ Public Class Supplier_mod
                 DBCon.Close()
             End If
         End Try
-        Me.Hide()
+        Me.Close()
     End Sub
     Private Sub GTbSMCat_TextChanged(sender As Object, e As EventArgs) Handles GTbSMCat.TextChanged
 
@@ -64,5 +64,9 @@ Public Class Supplier_mod
 
     Private Sub Supplier_mod_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
+
+    Private Sub GBtnSMX1_Click(sender As Object, e As EventArgs) Handles GBtnSMX1.Click
+        Me.Close()
     End Sub
 End Class

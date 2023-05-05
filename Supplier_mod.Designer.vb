@@ -49,13 +49,13 @@ Partial Class Supplier_mod
         Me.GTbSMEid.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GTbSMEid.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GTbSMEid.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTbSMEid.Location = New System.Drawing.Point(533, 64)
-        Me.GTbSMEid.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GTbSMEid.Location = New System.Drawing.Point(400, 52)
+        Me.GTbSMEid.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GTbSMEid.Name = "GTbSMEid"
         Me.GTbSMEid.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.GTbSMEid.PlaceholderText = ""
         Me.GTbSMEid.SelectedText = ""
-        Me.GTbSMEid.Size = New System.Drawing.Size(229, 48)
+        Me.GTbSMEid.Size = New System.Drawing.Size(172, 39)
         Me.GTbSMEid.TabIndex = 67
         '
         'GBtnSMCle
@@ -72,14 +72,14 @@ Partial Class Supplier_mod
         Me.GBtnSMCle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.GBtnSMCle.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(95, Byte), Integer))
         Me.GBtnSMCle.HoverState.ForeColor = System.Drawing.Color.Black
-        Me.GBtnSMCle.Location = New System.Drawing.Point(612, 318)
-        Me.GBtnSMCle.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GBtnSMCle.Location = New System.Drawing.Point(459, 258)
+        Me.GBtnSMCle.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GBtnSMCle.Name = "GBtnSMCle"
         Me.GBtnSMCle.ShadowDecoration.BorderRadius = 17
         Me.GBtnSMCle.ShadowDecoration.Color = System.Drawing.Color.White
         Me.GBtnSMCle.ShadowDecoration.Depth = 10
         Me.GBtnSMCle.ShadowDecoration.Enabled = True
-        Me.GBtnSMCle.Size = New System.Drawing.Size(139, 56)
+        Me.GBtnSMCle.Size = New System.Drawing.Size(104, 46)
         Me.GBtnSMCle.TabIndex = 65
         Me.GBtnSMCle.Text = "Clear"
         '
@@ -97,14 +97,14 @@ Partial Class Supplier_mod
         Me.GBtnSMSave.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.GBtnSMSave.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.GBtnSMSave.HoverState.ForeColor = System.Drawing.Color.Black
-        Me.GBtnSMSave.Location = New System.Drawing.Point(420, 316)
-        Me.GBtnSMSave.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GBtnSMSave.Location = New System.Drawing.Point(315, 257)
+        Me.GBtnSMSave.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GBtnSMSave.Name = "GBtnSMSave"
         Me.GBtnSMSave.ShadowDecoration.BorderRadius = 17
         Me.GBtnSMSave.ShadowDecoration.Color = System.Drawing.Color.White
         Me.GBtnSMSave.ShadowDecoration.Depth = 10
         Me.GBtnSMSave.ShadowDecoration.Enabled = True
-        Me.GBtnSMSave.Size = New System.Drawing.Size(143, 56)
+        Me.GBtnSMSave.Size = New System.Drawing.Size(107, 46)
         Me.GBtnSMSave.TabIndex = 64
         Me.GBtnSMSave.Text = "Save"
         '
@@ -120,13 +120,13 @@ Partial Class Supplier_mod
         Me.GTbSMCat.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GTbSMCat.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GTbSMCat.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTbSMCat.Location = New System.Drawing.Point(559, 246)
-        Me.GTbSMCat.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GTbSMCat.Location = New System.Drawing.Point(419, 200)
+        Me.GTbSMCat.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GTbSMCat.Name = "GTbSMCat"
         Me.GTbSMCat.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.GTbSMCat.PlaceholderText = ""
         Me.GTbSMCat.SelectedText = ""
-        Me.GTbSMCat.Size = New System.Drawing.Size(229, 48)
+        Me.GTbSMCat.Size = New System.Drawing.Size(172, 39)
         Me.GTbSMCat.TabIndex = 63
         '
         'GTbSMPNo
@@ -141,13 +141,13 @@ Partial Class Supplier_mod
         Me.GTbSMPNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GTbSMPNo.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GTbSMPNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTbSMPNo.Location = New System.Drawing.Point(165, 246)
-        Me.GTbSMPNo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GTbSMPNo.Location = New System.Drawing.Point(124, 200)
+        Me.GTbSMPNo.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GTbSMPNo.Name = "GTbSMPNo"
         Me.GTbSMPNo.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.GTbSMPNo.PlaceholderText = ""
         Me.GTbSMPNo.SelectedText = ""
-        Me.GTbSMPNo.Size = New System.Drawing.Size(229, 48)
+        Me.GTbSMPNo.Size = New System.Drawing.Size(172, 39)
         Me.GTbSMPNo.TabIndex = 62
         '
         'GTbSMAdd
@@ -162,13 +162,13 @@ Partial Class Supplier_mod
         Me.GTbSMAdd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GTbSMAdd.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GTbSMAdd.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTbSMAdd.Location = New System.Drawing.Point(165, 155)
-        Me.GTbSMAdd.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GTbSMAdd.Location = New System.Drawing.Point(124, 126)
+        Me.GTbSMAdd.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GTbSMAdd.Name = "GTbSMAdd"
         Me.GTbSMAdd.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.GTbSMAdd.PlaceholderText = ""
         Me.GTbSMAdd.SelectedText = ""
-        Me.GTbSMAdd.Size = New System.Drawing.Size(597, 48)
+        Me.GTbSMAdd.Size = New System.Drawing.Size(448, 39)
         Me.GTbSMAdd.TabIndex = 61
         '
         'GTbSMSN
@@ -183,13 +183,13 @@ Partial Class Supplier_mod
         Me.GTbSMSN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GTbSMSN.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GTbSMSN.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTbSMSN.Location = New System.Drawing.Point(165, 64)
-        Me.GTbSMSN.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GTbSMSN.Location = New System.Drawing.Point(124, 52)
+        Me.GTbSMSN.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GTbSMSN.Name = "GTbSMSN"
         Me.GTbSMSN.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.GTbSMSN.PlaceholderText = ""
         Me.GTbSMSN.SelectedText = ""
-        Me.GTbSMSN.Size = New System.Drawing.Size(229, 48)
+        Me.GTbSMSN.Size = New System.Drawing.Size(172, 39)
         Me.GTbSMSN.TabIndex = 54
         '
         'GBtnSMX1
@@ -208,14 +208,14 @@ Partial Class Supplier_mod
         Me.GBtnSMX1.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.GBtnSMX1.Image = Global.Sybca_BillingSystem.My.Resources.Resources.cl
         Me.GBtnSMX1.ImageSize = New System.Drawing.Size(40, 40)
-        Me.GBtnSMX1.Location = New System.Drawing.Point(741, 2)
-        Me.GBtnSMX1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GBtnSMX1.Location = New System.Drawing.Point(556, 2)
+        Me.GBtnSMX1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GBtnSMX1.Name = "GBtnSMX1"
         Me.GBtnSMX1.ShadowDecoration.BorderRadius = 10
         Me.GBtnSMX1.ShadowDecoration.Color = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.GBtnSMX1.ShadowDecoration.Depth = 20
         Me.GBtnSMX1.ShadowDecoration.Enabled = True
-        Me.GBtnSMX1.Size = New System.Drawing.Size(51, 34)
+        Me.GBtnSMX1.Size = New System.Drawing.Size(38, 28)
         Me.GBtnSMX1.TabIndex = 68
         '
         'GLabelSMSN
@@ -223,9 +223,10 @@ Partial Class Supplier_mod
         Me.GLabelSMSN.AutoSize = True
         Me.GLabelSMSN.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold)
         Me.GLabelSMSN.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GLabelSMSN.Location = New System.Drawing.Point(28, 78)
+        Me.GLabelSMSN.Location = New System.Drawing.Point(21, 63)
+        Me.GLabelSMSN.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.GLabelSMSN.Name = "GLabelSMSN"
-        Me.GLabelSMSN.Size = New System.Drawing.Size(65, 16)
+        Me.GLabelSMSN.Size = New System.Drawing.Size(53, 13)
         Me.GLabelSMSN.TabIndex = 69
         Me.GLabelSMSN.Text = "Supplier"
         '
@@ -234,9 +235,10 @@ Partial Class Supplier_mod
         Me.GLabelSMEid.AutoSize = True
         Me.GLabelSMEid.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold)
         Me.GLabelSMEid.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GLabelSMEid.Location = New System.Drawing.Point(431, 78)
+        Me.GLabelSMEid.Location = New System.Drawing.Point(323, 63)
+        Me.GLabelSMEid.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.GLabelSMEid.Name = "GLabelSMEid"
-        Me.GLabelSMEid.Size = New System.Drawing.Size(59, 16)
+        Me.GLabelSMEid.Size = New System.Drawing.Size(49, 13)
         Me.GLabelSMEid.TabIndex = 70
         Me.GLabelSMEid.Text = "Emai Id"
         '
@@ -245,9 +247,10 @@ Partial Class Supplier_mod
         Me.GLabelSMAdd.AutoSize = True
         Me.GLabelSMAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold)
         Me.GLabelSMAdd.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GLabelSMAdd.Location = New System.Drawing.Point(28, 174)
+        Me.GLabelSMAdd.Location = New System.Drawing.Point(21, 141)
+        Me.GLabelSMAdd.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.GLabelSMAdd.Name = "GLabelSMAdd"
-        Me.GLabelSMAdd.Size = New System.Drawing.Size(65, 16)
+        Me.GLabelSMAdd.Size = New System.Drawing.Size(52, 13)
         Me.GLabelSMAdd.TabIndex = 71
         Me.GLabelSMAdd.Text = "Address"
         '
@@ -256,9 +259,10 @@ Partial Class Supplier_mod
         Me.GLabelSMPn9.AutoSize = True
         Me.GLabelSMPn9.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold)
         Me.GLabelSMPn9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GLabelSMPn9.Location = New System.Drawing.Point(28, 256)
+        Me.GLabelSMPn9.Location = New System.Drawing.Point(21, 208)
+        Me.GLabelSMPn9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.GLabelSMPn9.Name = "GLabelSMPn9"
-        Me.GLabelSMPn9.Size = New System.Drawing.Size(75, 16)
+        Me.GLabelSMPn9.Size = New System.Drawing.Size(63, 13)
         Me.GLabelSMPn9.TabIndex = 72
         Me.GLabelSMPn9.Text = "Phone No"
         '
@@ -267,18 +271,19 @@ Partial Class Supplier_mod
         Me.GLabelSMcat.AutoSize = True
         Me.GLabelSMcat.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold)
         Me.GLabelSMcat.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GLabelSMcat.Location = New System.Drawing.Point(453, 256)
+        Me.GLabelSMcat.Location = New System.Drawing.Point(340, 208)
+        Me.GLabelSMcat.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.GLabelSMcat.Name = "GLabelSMcat"
-        Me.GLabelSMcat.Size = New System.Drawing.Size(83, 16)
+        Me.GLabelSMcat.Size = New System.Drawing.Size(67, 13)
         Me.GLabelSMcat.TabIndex = 73
         Me.GLabelSMcat.Text = "Categories"
         '
         'Supplier_mod
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(800, 404)
+        Me.ClientSize = New System.Drawing.Size(600, 328)
         Me.Controls.Add(Me.GLabelSMcat)
         Me.Controls.Add(Me.GLabelSMPn9)
         Me.Controls.Add(Me.GLabelSMAdd)
@@ -293,7 +298,7 @@ Partial Class Supplier_mod
         Me.Controls.Add(Me.GTbSMAdd)
         Me.Controls.Add(Me.GTbSMSN)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Supplier_mod"
         Me.Text = "Supplier_mod"
         Me.ResumeLayout(False)

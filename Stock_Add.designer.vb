@@ -42,9 +42,10 @@ Partial Class Stock_Add
         'LinkSA
         '
         Me.LinkSA.AutoSize = True
-        Me.LinkSA.Location = New System.Drawing.Point(144, 174)
+        Me.LinkSA.Location = New System.Drawing.Point(108, 141)
+        Me.LinkSA.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LinkSA.Name = "LinkSA"
-        Me.LinkSA.Size = New System.Drawing.Size(127, 16)
+        Me.LinkSA.Size = New System.Drawing.Size(105, 13)
         Me.LinkSA.TabIndex = 31
         Me.LinkSA.TabStop = True
         Me.LinkSA.Text = "[ Search Product Id ]"
@@ -61,13 +62,13 @@ Partial Class Stock_Add
         Me.GTextSApn.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GTextSApn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GTextSApn.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTextSApn.Location = New System.Drawing.Point(147, 210)
-        Me.GTextSApn.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GTextSApn.Location = New System.Drawing.Point(110, 171)
+        Me.GTextSApn.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GTextSApn.Name = "GTextSApn"
         Me.GTextSApn.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.GTextSApn.PlaceholderText = ""
         Me.GTextSApn.SelectedText = ""
-        Me.GTextSApn.Size = New System.Drawing.Size(229, 44)
+        Me.GTextSApn.Size = New System.Drawing.Size(172, 36)
         Me.GTextSApn.TabIndex = 30
         '
         'GDTPSA
@@ -77,12 +78,12 @@ Partial Class Stock_Add
         Me.GDTPSA.FillColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.GDTPSA.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GDTPSA.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.GDTPSA.Location = New System.Drawing.Point(523, 112)
-        Me.GDTPSA.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GDTPSA.Location = New System.Drawing.Point(392, 91)
+        Me.GDTPSA.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GDTPSA.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.GDTPSA.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.GDTPSA.Name = "GDTPSA"
-        Me.GDTPSA.Size = New System.Drawing.Size(200, 46)
+        Me.GDTPSA.Size = New System.Drawing.Size(150, 37)
         Me.GDTPSA.TabIndex = 28
         Me.GDTPSA.Value = New Date(2023, 4, 26, 20, 44, 51, 724)
         '
@@ -98,13 +99,13 @@ Partial Class Stock_Add
         Me.GTBSAQty.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GTBSAQty.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GTBSAQty.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTBSAQty.Location = New System.Drawing.Point(523, 210)
-        Me.GTBSAQty.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GTBSAQty.Location = New System.Drawing.Point(392, 171)
+        Me.GTBSAQty.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GTBSAQty.Name = "GTBSAQty"
         Me.GTBSAQty.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.GTBSAQty.PlaceholderText = ""
         Me.GTBSAQty.SelectedText = ""
-        Me.GTBSAQty.Size = New System.Drawing.Size(92, 41)
+        Me.GTBSAQty.Size = New System.Drawing.Size(69, 33)
         Me.GTBSAQty.TabIndex = 22
         '
         'GTBSASupp
@@ -119,13 +120,13 @@ Partial Class Stock_Add
         Me.GTBSASupp.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GTBSASupp.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GTBSASupp.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTBSASupp.Location = New System.Drawing.Point(521, 45)
-        Me.GTBSASupp.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GTBSASupp.Location = New System.Drawing.Point(391, 37)
+        Me.GTBSASupp.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GTBSASupp.Name = "GTBSASupp"
         Me.GTBSASupp.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.GTBSASupp.PlaceholderText = ""
         Me.GTBSASupp.SelectedText = ""
-        Me.GTBSASupp.Size = New System.Drawing.Size(229, 42)
+        Me.GTBSASupp.Size = New System.Drawing.Size(172, 34)
         Me.GTBSASupp.TabIndex = 21
         '
         'GTBSApID
@@ -140,13 +141,13 @@ Partial Class Stock_Add
         Me.GTBSApID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GTBSApID.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GTBSApID.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTBSApID.Location = New System.Drawing.Point(147, 114)
-        Me.GTBSApID.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GTBSApID.Location = New System.Drawing.Point(110, 93)
+        Me.GTBSApID.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GTBSApID.Name = "GTBSApID"
         Me.GTBSApID.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.GTBSApID.PlaceholderText = ""
         Me.GTBSApID.SelectedText = ""
-        Me.GTBSApID.Size = New System.Drawing.Size(229, 44)
+        Me.GTBSApID.Size = New System.Drawing.Size(172, 36)
         Me.GTBSApID.TabIndex = 20
         '
         'GTBSASib
@@ -161,13 +162,13 @@ Partial Class Stock_Add
         Me.GTBSASib.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GTBSASib.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GTBSASib.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTBSASib.Location = New System.Drawing.Point(147, 43)
-        Me.GTBSASib.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GTBSASib.Location = New System.Drawing.Point(110, 35)
+        Me.GTBSASib.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GTBSASib.Name = "GTBSASib"
         Me.GTBSASib.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.GTBSASib.PlaceholderText = ""
         Me.GTBSASib.SelectedText = ""
-        Me.GTBSASib.Size = New System.Drawing.Size(229, 44)
+        Me.GTBSASib.Size = New System.Drawing.Size(172, 36)
         Me.GTBSASib.TabIndex = 19
         '
         'GBtnSAAdd
@@ -184,14 +185,14 @@ Partial Class Stock_Add
         Me.GBtnSAAdd.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.GBtnSAAdd.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.GBtnSAAdd.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(95, Byte), Integer))
-        Me.GBtnSAAdd.Location = New System.Drawing.Point(606, 267)
-        Me.GBtnSAAdd.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GBtnSAAdd.Location = New System.Drawing.Point(454, 217)
+        Me.GBtnSAAdd.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GBtnSAAdd.Name = "GBtnSAAdd"
         Me.GBtnSAAdd.ShadowDecoration.BorderRadius = 17
         Me.GBtnSAAdd.ShadowDecoration.Color = System.Drawing.Color.White
         Me.GBtnSAAdd.ShadowDecoration.Depth = 10
         Me.GBtnSAAdd.ShadowDecoration.Enabled = True
-        Me.GBtnSAAdd.Size = New System.Drawing.Size(135, 50)
+        Me.GBtnSAAdd.Size = New System.Drawing.Size(101, 41)
         Me.GBtnSAAdd.TabIndex = 32
         Me.GBtnSAAdd.Text = "Add Stock"
         '
@@ -212,14 +213,14 @@ Partial Class Stock_Add
         Me.GBtnX1.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.GBtnX1.Image = Global.Sybca_BillingSystem.My.Resources.Resources.cl
         Me.GBtnX1.ImageSize = New System.Drawing.Size(40, 40)
-        Me.GBtnX1.Location = New System.Drawing.Point(723, 4)
-        Me.GBtnX1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GBtnX1.Location = New System.Drawing.Point(542, 3)
+        Me.GBtnX1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GBtnX1.Name = "GBtnX1"
         Me.GBtnX1.ShadowDecoration.BorderRadius = 10
         Me.GBtnX1.ShadowDecoration.Color = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.GBtnX1.ShadowDecoration.Depth = 20
         Me.GBtnX1.ShadowDecoration.Enabled = True
-        Me.GBtnX1.Size = New System.Drawing.Size(47, 31)
+        Me.GBtnX1.Size = New System.Drawing.Size(35, 25)
         Me.GBtnX1.TabIndex = 33
         Me.GBtnX1.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase
         '
@@ -228,9 +229,10 @@ Partial Class Stock_Add
         Me.GBtnSASIB.AutoSize = True
         Me.GBtnSASIB.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold)
         Me.GBtnSASIB.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GBtnSASIB.Location = New System.Drawing.Point(12, 58)
+        Me.GBtnSASIB.Location = New System.Drawing.Point(9, 47)
+        Me.GBtnSASIB.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.GBtnSASIB.Name = "GBtnSASIB"
-        Me.GBtnSASIB.Size = New System.Drawing.Size(84, 16)
+        Me.GBtnSASIB.Size = New System.Drawing.Size(73, 13)
         Me.GBtnSASIB.TabIndex = 34
         Me.GBtnSASIB.Text = "Stock In By"
         '
@@ -239,9 +241,10 @@ Partial Class Stock_Add
         Me.GBtnSAPID.AutoSize = True
         Me.GBtnSAPID.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold)
         Me.GBtnSAPID.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GBtnSAPID.Location = New System.Drawing.Point(12, 129)
+        Me.GBtnSAPID.Location = New System.Drawing.Point(9, 105)
+        Me.GBtnSAPID.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.GBtnSAPID.Name = "GBtnSAPID"
-        Me.GBtnSAPID.Size = New System.Drawing.Size(79, 16)
+        Me.GBtnSAPID.Size = New System.Drawing.Size(68, 13)
         Me.GBtnSAPID.TabIndex = 35
         Me.GBtnSAPID.Text = "Product ID"
         '
@@ -250,9 +253,10 @@ Partial Class Stock_Add
         Me.GBtnSAPN.AutoSize = True
         Me.GBtnSAPN.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold)
         Me.GBtnSAPN.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GBtnSAPN.Location = New System.Drawing.Point(12, 221)
+        Me.GBtnSAPN.Location = New System.Drawing.Point(9, 180)
+        Me.GBtnSAPN.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.GBtnSAPN.Name = "GBtnSAPN"
-        Me.GBtnSAPN.Size = New System.Drawing.Size(105, 16)
+        Me.GBtnSAPN.Size = New System.Drawing.Size(87, 13)
         Me.GBtnSAPN.TabIndex = 36
         Me.GBtnSAPN.Text = "Product Name"
         '
@@ -261,9 +265,10 @@ Partial Class Stock_Add
         Me.GBtnSASUP.AutoSize = True
         Me.GBtnSASUP.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold)
         Me.GBtnSASUP.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GBtnSASUP.Location = New System.Drawing.Point(410, 58)
+        Me.GBtnSASUP.Location = New System.Drawing.Point(308, 47)
+        Me.GBtnSASUP.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.GBtnSASUP.Name = "GBtnSASUP"
-        Me.GBtnSASUP.Size = New System.Drawing.Size(65, 16)
+        Me.GBtnSASUP.Size = New System.Drawing.Size(53, 13)
         Me.GBtnSASUP.TabIndex = 37
         Me.GBtnSASUP.Text = "Supplier"
         '
@@ -272,9 +277,10 @@ Partial Class Stock_Add
         Me.GBtnSADate.AutoSize = True
         Me.GBtnSADate.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold)
         Me.GBtnSADate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GBtnSADate.Location = New System.Drawing.Point(410, 129)
+        Me.GBtnSADate.Location = New System.Drawing.Point(308, 105)
+        Me.GBtnSADate.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.GBtnSADate.Name = "GBtnSADate"
-        Me.GBtnSADate.Size = New System.Drawing.Size(99, 16)
+        Me.GBtnSADate.Size = New System.Drawing.Size(86, 13)
         Me.GBtnSADate.TabIndex = 38
         Me.GBtnSADate.Text = "Stock In Date"
         '
@@ -283,18 +289,19 @@ Partial Class Stock_Add
         Me.GBtnSAQ.AutoSize = True
         Me.GBtnSAQ.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold)
         Me.GBtnSAQ.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GBtnSAQ.Location = New System.Drawing.Point(413, 221)
+        Me.GBtnSAQ.Location = New System.Drawing.Point(310, 180)
+        Me.GBtnSAQ.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.GBtnSAQ.Name = "GBtnSAQ"
-        Me.GBtnSAQ.Size = New System.Drawing.Size(54, 16)
+        Me.GBtnSAQ.Size = New System.Drawing.Size(47, 13)
         Me.GBtnSAQ.TabIndex = 39
         Me.GBtnSAQ.Text = "Quntity"
         '
         'Stock_Add
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(772, 330)
+        Me.ClientSize = New System.Drawing.Size(579, 268)
         Me.Controls.Add(Me.GBtnSAQ)
         Me.Controls.Add(Me.GBtnSADate)
         Me.Controls.Add(Me.GBtnSASUP)
@@ -311,7 +318,7 @@ Partial Class Stock_Add
         Me.Controls.Add(Me.GTBSApID)
         Me.Controls.Add(Me.GTBSASib)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Stock_Add"
         Me.Text = "Stock_Add"
         Me.ResumeLayout(False)

@@ -1,5 +1,4 @@
 ﻿Imports System.Data.SqlClient
-
 Public Class Brand
     Sub listproduct()
         DBCon.Open()
@@ -14,13 +13,9 @@ Public Class Brand
     Private Sub Brand_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         listproduct()
     End Sub
-
     Private Sub GBtnPLaddrefresh_Click(sender As Object, e As EventArgs) Handles GBtnPLaddrefresh.Click
         listproduct()
     End Sub
-
     Private Sub GDataGridVBrand_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles GDataGridVBrand.CellContentClick
-
-
     End Sub
 End Class

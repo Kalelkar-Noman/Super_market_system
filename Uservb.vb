@@ -27,25 +27,6 @@ Public Class Uservb
         GTbCARpass.Clear()
 
     End Sub
-    Private Sub GTBCOCan_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Guna2ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles GComboCA.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub Guna2HtmlLabel2_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub GLabelCAAdd_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub TableUser_Click(sender As Object, e As EventArgs) Handles TableUser.Click
-
-    End Sub
 
     Private Sub GBtnCASave_Click(sender As Object, e As EventArgs) Handles GBtnCASave.Click
         If GTbCAPass.Text = GTbCARpass.Text Then
