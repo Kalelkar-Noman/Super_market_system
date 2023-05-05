@@ -79,6 +79,7 @@ Public Class Product_List
                 End Try
             End If
             Product_Add.clears()
+            slt = False
         Else
                 MsgBox("Please Select a data")
         End If

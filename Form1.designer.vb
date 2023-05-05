@@ -31,44 +31,38 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.DGVEStock = New System.Windows.Forms.DataGridView()
+        Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.qu = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PanelEStock = New System.Windows.Forms.Panel()
-        Me.GBtnEStockCheck = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2TextB = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GBtnESearch = New Guna.UI2.WinForms.Guna2Button()
         Me.GTbEStockPN = New Guna.UI2.WinForms.Guna2TextBox()
         Me.LabelEStockPN = New System.Windows.Forms.Label()
-        Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.DGVERet = New System.Windows.Forms.DataGridView()
-        Me.PanelERet = New System.Windows.Forms.Panel()
-        Me.GDTPRCD = New Guna.UI2.WinForms.Guna2DateTimePicker()
-        Me.GBtnRSearch = New Guna.UI2.WinForms.Guna2Button()
-        Me.GTbRCN = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.GTbRBN = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.PanelERet2 = New System.Windows.Forms.Panel()
-        Me.GBtnRClear = New Guna.UI2.WinForms.Guna2Button()
-        Me.GBtnRAdd = New Guna.UI2.WinForms.Guna2Button()
-        Me.GTbRAmt = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.GTbRQty = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.GTbRPN = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.GTbRPID = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.LabelRAmt = New System.Windows.Forms.Label()
-        Me.LabelRQty = New System.Windows.Forms.Label()
-        Me.LabelRPN = New System.Windows.Forms.Label()
-        Me.LabelRPID = New System.Windows.Forms.Label()
-        Me.LabelRCD = New System.Windows.Forms.Label()
-        Me.LabelERCN = New System.Windows.Forms.Label()
-        Me.LabelRBN = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.DGVCD = New System.Windows.Forms.DataGridView()
+        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.customer = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PanelECD = New System.Windows.Forms.Panel()
+        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.GBtnECDSearch = New Guna.UI2.WinForms.Guna2Button()
         Me.GTbECDCN = New Guna.UI2.WinForms.Guna2TextBox()
         Me.GTbECDBill = New Guna.UI2.WinForms.Guna2TextBox()
         Me.LableECDCN = New System.Windows.Forms.Label()
         Me.LabelECDBill = New System.Windows.Forms.Label()
-        Me.TabConrolEMP = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.amount = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GPRightBottom = New Guna.UI2.WinForms.Guna2Panel()
         Me.GBtnAdd = New Guna.UI2.WinForms.Guna2Button()
         Me.GBtnESav = New Guna.UI2.WinForms.Guna2Button()
@@ -106,25 +100,13 @@ Partial Class Form1
         Me.LabelMNO = New System.Windows.Forms.Label()
         Me.LabelCN = New System.Windows.Forms.Label()
         Me.LabelBill = New System.Windows.Forms.Label()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.amount = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TabConrolEMP = New System.Windows.Forms.TabControl()
         Me.TabPage4.SuspendLayout()
         CType(Me.DGVEStock, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelEStock.SuspendLayout()
-        Me.TabPage3.SuspendLayout()
-        CType(Me.DGVERet, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.PanelERet.SuspendLayout()
-        Me.PanelERet2.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         CType(Me.DGVCD, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelECD.SuspendLayout()
-        Me.TabConrolEMP.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -134,6 +116,7 @@ Partial Class Form1
         Me.GPRightUpper.SuspendLayout()
         CType(Me.PicECash, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBQr, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabConrolEMP.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabPage4
@@ -151,20 +134,51 @@ Partial Class Form1
         '
         'DGVEStock
         '
+        Me.DGVEStock.AllowUserToAddRows = False
+        Me.DGVEStock.AllowUserToDeleteRows = False
         Me.DGVEStock.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.DGVEStock.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.DGVEStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGVEStock.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column9, Me.qu, Me.Column10})
         Me.DGVEStock.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DGVEStock.Location = New System.Drawing.Point(3, 66)
         Me.DGVEStock.Name = "DGVEStock"
+        Me.DGVEStock.ReadOnly = True
+        Me.DGVEStock.RowHeadersVisible = False
         Me.DGVEStock.RowHeadersWidth = 51
         Me.DGVEStock.Size = New System.Drawing.Size(981, 356)
         Me.DGVEStock.TabIndex = 2
         '
+        'Column9
+        '
+        Me.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column9.DataPropertyName = "pid"
+        Me.Column9.HeaderText = "product id"
+        Me.Column9.Name = "Column9"
+        Me.Column9.ReadOnly = True
+        '
+        'qu
+        '
+        Me.qu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.qu.DataPropertyName = "product_name"
+        Me.qu.HeaderText = "product name"
+        Me.qu.Name = "qu"
+        Me.qu.ReadOnly = True
+        '
+        'Column10
+        '
+        Me.Column10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column10.DataPropertyName = "quantity"
+        Me.Column10.HeaderText = "product in stock"
+        Me.Column10.Name = "Column10"
+        Me.Column10.ReadOnly = True
+        '
         'PanelEStock
         '
         Me.PanelEStock.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
-        Me.PanelEStock.Controls.Add(Me.GBtnEStockCheck)
+        Me.PanelEStock.Controls.Add(Me.Guna2Button2)
+        Me.PanelEStock.Controls.Add(Me.Guna2TextB)
+        Me.PanelEStock.Controls.Add(Me.Label1)
         Me.PanelEStock.Controls.Add(Me.GBtnESearch)
         Me.PanelEStock.Controls.Add(Me.GTbEStockPN)
         Me.PanelEStock.Controls.Add(Me.LabelEStockPN)
@@ -174,23 +188,57 @@ Partial Class Form1
         Me.PanelEStock.Size = New System.Drawing.Size(981, 63)
         Me.PanelEStock.TabIndex = 1
         '
-        'GBtnEStockCheck
+        'Guna2Button2
         '
-        Me.GBtnEStockCheck.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.GBtnEStockCheck.BorderRadius = 17
-        Me.GBtnEStockCheck.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.GBtnEStockCheck.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.GBtnEStockCheck.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.GBtnEStockCheck.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.GBtnEStockCheck.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.GBtnEStockCheck.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.GBtnEStockCheck.ForeColor = System.Drawing.Color.White
-        Me.GBtnEStockCheck.Location = New System.Drawing.Point(609, 14)
-        Me.GBtnEStockCheck.Margin = New System.Windows.Forms.Padding(2)
-        Me.GBtnEStockCheck.Name = "GBtnEStockCheck"
-        Me.GBtnEStockCheck.Size = New System.Drawing.Size(135, 37)
-        Me.GBtnEStockCheck.TabIndex = 34
-        Me.GBtnEStockCheck.Text = "Check Stock"
+        Me.Guna2Button2.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.Guna2Button2.BorderRadius = 17
+        Me.Guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button2.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Guna2Button2.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
+        Me.Guna2Button2.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button2.Location = New System.Drawing.Point(754, 14)
+        Me.Guna2Button2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Button2.Name = "Guna2Button2"
+        Me.Guna2Button2.Size = New System.Drawing.Size(81, 37)
+        Me.Guna2Button2.TabIndex = 36
+        Me.Guna2Button2.Text = "Search"
+        '
+        'Guna2TextB
+        '
+        Me.Guna2TextB.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.Guna2TextB.BorderRadius = 13
+        Me.Guna2TextB.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextB.DefaultText = ""
+        Me.Guna2TextB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextB.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextB.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2TextB.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextB.Location = New System.Drawing.Point(538, 13)
+        Me.Guna2TextB.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Guna2TextB.Name = "Guna2TextB"
+        Me.Guna2TextB.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextB.PlaceholderText = ""
+        Me.Guna2TextB.SelectedText = ""
+        Me.Guna2TextB.Size = New System.Drawing.Size(172, 38)
+        Me.Guna2TextB.TabIndex = 35
+        '
+        'Label1
+        '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Silver
+        Me.Label1.Location = New System.Drawing.Point(447, 13)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(86, 37)
+        Me.Label1.TabIndex = 34
+        Me.Label1.Text = "Product id"
         '
         'GBtnESearch
         '
@@ -203,7 +251,7 @@ Partial Class Form1
         Me.GBtnESearch.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.GBtnESearch.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.GBtnESearch.ForeColor = System.Drawing.Color.White
-        Me.GBtnESearch.Location = New System.Drawing.Point(515, 13)
+        Me.GBtnESearch.Location = New System.Drawing.Point(335, 12)
         Me.GBtnESearch.Margin = New System.Windows.Forms.Padding(2)
         Me.GBtnESearch.Name = "GBtnESearch"
         Me.GBtnESearch.Size = New System.Drawing.Size(81, 37)
@@ -223,7 +271,7 @@ Partial Class Form1
         Me.GTbEStockPN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GTbEStockPN.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GTbEStockPN.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTbEStockPN.Location = New System.Drawing.Point(330, 12)
+        Me.GTbEStockPN.Location = New System.Drawing.Point(113, 12)
         Me.GTbEStockPN.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GTbEStockPN.Name = "GTbEStockPN"
         Me.GTbEStockPN.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -238,344 +286,11 @@ Partial Class Form1
         Me.LabelEStockPN.BackColor = System.Drawing.Color.Transparent
         Me.LabelEStockPN.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelEStockPN.ForeColor = System.Drawing.Color.Silver
-        Me.LabelEStockPN.Location = New System.Drawing.Point(231, 20)
+        Me.LabelEStockPN.Location = New System.Drawing.Point(3, 13)
         Me.LabelEStockPN.Name = "LabelEStockPN"
-        Me.LabelEStockPN.Size = New System.Drawing.Size(83, 19)
+        Me.LabelEStockPN.Size = New System.Drawing.Size(86, 37)
         Me.LabelEStockPN.TabIndex = 4
         Me.LabelEStockPN.Text = "Product name"
-        '
-        'TabPage3
-        '
-        Me.TabPage3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.TabPage3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.TabPage3.Controls.Add(Me.DGVERet)
-        Me.TabPage3.Controls.Add(Me.PanelERet)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(991, 429)
-        Me.TabPage3.TabIndex = 2
-        Me.TabPage3.Text = "RETURN"
-        '
-        'DGVERet
-        '
-        Me.DGVERet.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.DGVERet.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.DGVERet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGVERet.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DGVERet.Location = New System.Drawing.Point(3, 90)
-        Me.DGVERet.Name = "DGVERet"
-        Me.DGVERet.RowHeadersWidth = 51
-        Me.DGVERet.Size = New System.Drawing.Size(981, 332)
-        Me.DGVERet.TabIndex = 2
-        '
-        'PanelERet
-        '
-        Me.PanelERet.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.PanelERet.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
-        Me.PanelERet.Controls.Add(Me.GDTPRCD)
-        Me.PanelERet.Controls.Add(Me.GBtnRSearch)
-        Me.PanelERet.Controls.Add(Me.GTbRCN)
-        Me.PanelERet.Controls.Add(Me.GTbRBN)
-        Me.PanelERet.Controls.Add(Me.PanelERet2)
-        Me.PanelERet.Controls.Add(Me.LabelRCD)
-        Me.PanelERet.Controls.Add(Me.LabelERCN)
-        Me.PanelERet.Controls.Add(Me.LabelRBN)
-        Me.PanelERet.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelERet.Location = New System.Drawing.Point(3, 3)
-        Me.PanelERet.Name = "PanelERet"
-        Me.PanelERet.Size = New System.Drawing.Size(981, 87)
-        Me.PanelERet.TabIndex = 1
-        '
-        'GDTPRCD
-        '
-        Me.GDTPRCD.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.GDTPRCD.BorderRadius = 10
-        Me.GDTPRCD.Checked = True
-        Me.GDTPRCD.FillColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer))
-        Me.GDTPRCD.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GDTPRCD.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.GDTPRCD.Location = New System.Drawing.Point(87, 40)
-        Me.GDTPRCD.Margin = New System.Windows.Forms.Padding(2)
-        Me.GDTPRCD.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
-        Me.GDTPRCD.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
-        Me.GDTPRCD.Name = "GDTPRCD"
-        Me.GDTPRCD.Size = New System.Drawing.Size(150, 29)
-        Me.GDTPRCD.TabIndex = 36
-        Me.GDTPRCD.Value = New Date(2023, 4, 28, 1, 12, 21, 106)
-        '
-        'GBtnRSearch
-        '
-        Me.GBtnRSearch.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.GBtnRSearch.BorderRadius = 8
-        Me.GBtnRSearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.GBtnRSearch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.GBtnRSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.GBtnRSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.GBtnRSearch.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.GBtnRSearch.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.GBtnRSearch.ForeColor = System.Drawing.Color.White
-        Me.GBtnRSearch.Location = New System.Drawing.Point(282, 43)
-        Me.GBtnRSearch.Margin = New System.Windows.Forms.Padding(2)
-        Me.GBtnRSearch.Name = "GBtnRSearch"
-        Me.GBtnRSearch.Size = New System.Drawing.Size(75, 26)
-        Me.GBtnRSearch.TabIndex = 35
-        Me.GBtnRSearch.Text = "Search"
-        '
-        'GTbRCN
-        '
-        Me.GTbRCN.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.GTbRCN.BorderRadius = 5
-        Me.GTbRCN.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.GTbRCN.DefaultText = ""
-        Me.GTbRCN.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.GTbRCN.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.GTbRCN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.GTbRCN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.GTbRCN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTbRCN.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GTbRCN.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTbRCN.Location = New System.Drawing.Point(263, 9)
-        Me.GTbRCN.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.GTbRCN.Name = "GTbRCN"
-        Me.GTbRCN.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.GTbRCN.PlaceholderText = ""
-        Me.GTbRCN.SelectedText = ""
-        Me.GTbRCN.Size = New System.Drawing.Size(146, 24)
-        Me.GTbRCN.TabIndex = 34
-        '
-        'GTbRBN
-        '
-        Me.GTbRBN.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.GTbRBN.BorderRadius = 5
-        Me.GTbRBN.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.GTbRBN.DefaultText = ""
-        Me.GTbRBN.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.GTbRBN.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.GTbRBN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.GTbRBN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.GTbRBN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTbRBN.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GTbRBN.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTbRBN.Location = New System.Drawing.Point(80, 9)
-        Me.GTbRBN.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.GTbRBN.Name = "GTbRBN"
-        Me.GTbRBN.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.GTbRBN.PlaceholderText = ""
-        Me.GTbRBN.SelectedText = ""
-        Me.GTbRBN.Size = New System.Drawing.Size(68, 19)
-        Me.GTbRBN.TabIndex = 33
-        '
-        'PanelERet2
-        '
-        Me.PanelERet2.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.PanelERet2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.PanelERet2.Controls.Add(Me.GBtnRClear)
-        Me.PanelERet2.Controls.Add(Me.GBtnRAdd)
-        Me.PanelERet2.Controls.Add(Me.GTbRAmt)
-        Me.PanelERet2.Controls.Add(Me.GTbRQty)
-        Me.PanelERet2.Controls.Add(Me.GTbRPN)
-        Me.PanelERet2.Controls.Add(Me.GTbRPID)
-        Me.PanelERet2.Controls.Add(Me.LabelRAmt)
-        Me.PanelERet2.Controls.Add(Me.LabelRQty)
-        Me.PanelERet2.Controls.Add(Me.LabelRPN)
-        Me.PanelERet2.Controls.Add(Me.LabelRPID)
-        Me.PanelERet2.Location = New System.Drawing.Point(492, 0)
-        Me.PanelERet2.Name = "PanelERet2"
-        Me.PanelERet2.Size = New System.Drawing.Size(488, 87)
-        Me.PanelERet2.TabIndex = 32
-        '
-        'GBtnRClear
-        '
-        Me.GBtnRClear.BorderRadius = 8
-        Me.GBtnRClear.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.GBtnRClear.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.GBtnRClear.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.GBtnRClear.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.GBtnRClear.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.GBtnRClear.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.GBtnRClear.ForeColor = System.Drawing.Color.White
-        Me.GBtnRClear.Location = New System.Drawing.Point(400, 46)
-        Me.GBtnRClear.Margin = New System.Windows.Forms.Padding(2)
-        Me.GBtnRClear.Name = "GBtnRClear"
-        Me.GBtnRClear.Size = New System.Drawing.Size(70, 21)
-        Me.GBtnRClear.TabIndex = 38
-        Me.GBtnRClear.Text = "Clear"
-        '
-        'GBtnRAdd
-        '
-        Me.GBtnRAdd.BorderRadius = 8
-        Me.GBtnRAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.GBtnRAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.GBtnRAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.GBtnRAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.GBtnRAdd.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.GBtnRAdd.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.GBtnRAdd.ForeColor = System.Drawing.Color.White
-        Me.GBtnRAdd.Location = New System.Drawing.Point(400, 14)
-        Me.GBtnRAdd.Margin = New System.Windows.Forms.Padding(2)
-        Me.GBtnRAdd.Name = "GBtnRAdd"
-        Me.GBtnRAdd.Size = New System.Drawing.Size(70, 24)
-        Me.GBtnRAdd.TabIndex = 36
-        Me.GBtnRAdd.Text = "Add"
-        '
-        'GTbRAmt
-        '
-        Me.GTbRAmt.BorderRadius = 5
-        Me.GTbRAmt.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.GTbRAmt.DefaultText = ""
-        Me.GTbRAmt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.GTbRAmt.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.GTbRAmt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.GTbRAmt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.GTbRAmt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTbRAmt.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GTbRAmt.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTbRAmt.Location = New System.Drawing.Point(293, 49)
-        Me.GTbRAmt.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.GTbRAmt.Name = "GTbRAmt"
-        Me.GTbRAmt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.GTbRAmt.PlaceholderText = ""
-        Me.GTbRAmt.SelectedText = ""
-        Me.GTbRAmt.Size = New System.Drawing.Size(77, 19)
-        Me.GTbRAmt.TabIndex = 37
-        '
-        'GTbRQty
-        '
-        Me.GTbRQty.BorderRadius = 5
-        Me.GTbRQty.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.GTbRQty.DefaultText = ""
-        Me.GTbRQty.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.GTbRQty.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.GTbRQty.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.GTbRQty.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.GTbRQty.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTbRQty.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GTbRQty.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTbRQty.Location = New System.Drawing.Point(296, 16)
-        Me.GTbRQty.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.GTbRQty.Name = "GTbRQty"
-        Me.GTbRQty.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.GTbRQty.PlaceholderText = ""
-        Me.GTbRQty.SelectedText = ""
-        Me.GTbRQty.Size = New System.Drawing.Size(56, 19)
-        Me.GTbRQty.TabIndex = 36
-        '
-        'GTbRPN
-        '
-        Me.GTbRPN.BorderRadius = 5
-        Me.GTbRPN.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.GTbRPN.DefaultText = ""
-        Me.GTbRPN.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.GTbRPN.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.GTbRPN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.GTbRPN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.GTbRPN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTbRPN.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GTbRPN.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTbRPN.Location = New System.Drawing.Point(96, 49)
-        Me.GTbRPN.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.GTbRPN.Name = "GTbRPN"
-        Me.GTbRPN.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.GTbRPN.PlaceholderText = ""
-        Me.GTbRPN.SelectedText = ""
-        Me.GTbRPN.Size = New System.Drawing.Size(112, 19)
-        Me.GTbRPN.TabIndex = 35
-        '
-        'GTbRPID
-        '
-        Me.GTbRPID.BorderRadius = 5
-        Me.GTbRPID.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.GTbRPID.DefaultText = ""
-        Me.GTbRPID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.GTbRPID.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.GTbRPID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.GTbRPID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.GTbRPID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTbRPID.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GTbRPID.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTbRPID.Location = New System.Drawing.Point(96, 15)
-        Me.GTbRPID.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.GTbRPID.Name = "GTbRPID"
-        Me.GTbRPID.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.GTbRPID.PlaceholderText = ""
-        Me.GTbRPID.SelectedText = ""
-        Me.GTbRPID.Size = New System.Drawing.Size(112, 19)
-        Me.GTbRPID.TabIndex = 35
-        '
-        'LabelRAmt
-        '
-        Me.LabelRAmt.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelRAmt.ForeColor = System.Drawing.Color.Silver
-        Me.LabelRAmt.Location = New System.Drawing.Point(228, 50)
-        Me.LabelRAmt.Name = "LabelRAmt"
-        Me.LabelRAmt.Size = New System.Drawing.Size(55, 17)
-        Me.LabelRAmt.TabIndex = 16
-        Me.LabelRAmt.Text = "Amount"
-        '
-        'LabelRQty
-        '
-        Me.LabelRQty.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelRQty.ForeColor = System.Drawing.Color.Silver
-        Me.LabelRQty.Location = New System.Drawing.Point(227, 16)
-        Me.LabelRQty.Name = "LabelRQty"
-        Me.LabelRQty.Size = New System.Drawing.Size(56, 19)
-        Me.LabelRQty.TabIndex = 15
-        Me.LabelRQty.Text = "Quantity"
-        '
-        'LabelRPN
-        '
-        Me.LabelRPN.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelRPN.ForeColor = System.Drawing.Color.Silver
-        Me.LabelRPN.Location = New System.Drawing.Point(3, 49)
-        Me.LabelRPN.Name = "LabelRPN"
-        Me.LabelRPN.Size = New System.Drawing.Size(78, 15)
-        Me.LabelRPN.TabIndex = 12
-        Me.LabelRPN.Text = "Product Name"
-        '
-        'LabelRPID
-        '
-        Me.LabelRPID.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelRPID.ForeColor = System.Drawing.Color.Silver
-        Me.LabelRPID.Location = New System.Drawing.Point(5, 18)
-        Me.LabelRPID.Name = "LabelRPID"
-        Me.LabelRPID.Size = New System.Drawing.Size(62, 15)
-        Me.LabelRPID.TabIndex = 12
-        Me.LabelRPID.Text = "ProductID"
-        '
-        'LabelRCD
-        '
-        Me.LabelRCD.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.LabelRCD.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelRCD.ForeColor = System.Drawing.Color.Silver
-        Me.LabelRCD.Location = New System.Drawing.Point(14, 43)
-        Me.LabelRCD.Name = "LabelRCD"
-        Me.LabelRCD.Size = New System.Drawing.Size(69, 18)
-        Me.LabelRCD.TabIndex = 31
-        Me.LabelRCD.Text = "Cancel Date"
-        '
-        'LabelERCN
-        '
-        Me.LabelERCN.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.LabelERCN.BackColor = System.Drawing.Color.Transparent
-        Me.LabelERCN.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelERCN.ForeColor = System.Drawing.Color.Silver
-        Me.LabelERCN.Location = New System.Drawing.Point(162, 10)
-        Me.LabelERCN.Name = "LabelERCN"
-        Me.LabelERCN.Size = New System.Drawing.Size(94, 18)
-        Me.LabelERCN.TabIndex = 4
-        Me.LabelERCN.Text = "Customer Name"
-        '
-        'LabelRBN
-        '
-        Me.LabelRBN.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.LabelRBN.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelRBN.ForeColor = System.Drawing.Color.Silver
-        Me.LabelRBN.Location = New System.Drawing.Point(14, 11)
-        Me.LabelRBN.Name = "LabelRBN"
-        Me.LabelRBN.Size = New System.Drawing.Size(44, 18)
-        Me.LabelRBN.TabIndex = 1
-        Me.LabelRBN.Text = "Bill No"
         '
         'TabPage2
         '
@@ -592,20 +307,42 @@ Partial Class Form1
         '
         'DGVCD
         '
+        Me.DGVCD.AllowUserToAddRows = False
+        Me.DGVCD.AllowUserToDeleteRows = False
         Me.DGVCD.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.DGVCD.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.DGVCD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGVCD.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column8, Me.customer})
         Me.DGVCD.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DGVCD.GridColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.DGVCD.Location = New System.Drawing.Point(3, 84)
         Me.DGVCD.Name = "DGVCD"
+        Me.DGVCD.ReadOnly = True
+        Me.DGVCD.RowHeadersVisible = False
         Me.DGVCD.RowHeadersWidth = 51
         Me.DGVCD.Size = New System.Drawing.Size(981, 338)
         Me.DGVCD.TabIndex = 1
         '
+        'Column8
+        '
+        Me.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column8.DataPropertyName = "billno"
+        Me.Column8.HeaderText = "Bill No."
+        Me.Column8.Name = "Column8"
+        Me.Column8.ReadOnly = True
+        '
+        'customer
+        '
+        Me.customer.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.customer.DataPropertyName = "custname"
+        Me.customer.HeaderText = "Customer"
+        Me.customer.Name = "customer"
+        Me.customer.ReadOnly = True
+        '
         'PanelECD
         '
         Me.PanelECD.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
+        Me.PanelECD.Controls.Add(Me.Guna2Button1)
         Me.PanelECD.Controls.Add(Me.GBtnECDSearch)
         Me.PanelECD.Controls.Add(Me.GTbECDCN)
         Me.PanelECD.Controls.Add(Me.GTbECDBill)
@@ -616,6 +353,24 @@ Partial Class Form1
         Me.PanelECD.Name = "PanelECD"
         Me.PanelECD.Size = New System.Drawing.Size(981, 81)
         Me.PanelECD.TabIndex = 0
+        '
+        'Guna2Button1
+        '
+        Me.Guna2Button1.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.Guna2Button1.BorderRadius = 17
+        Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button1.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
+        Me.Guna2Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.Guna2Button1.Location = New System.Drawing.Point(709, 20)
+        Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Button1.Name = "Guna2Button1"
+        Me.Guna2Button1.Size = New System.Drawing.Size(106, 40)
+        Me.Guna2Button1.TabIndex = 33
+        Me.Guna2Button1.Text = "search"
         '
         'GBtnECDSearch
         '
@@ -628,7 +383,7 @@ Partial Class Form1
         Me.GBtnECDSearch.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.GBtnECDSearch.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.GBtnECDSearch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GBtnECDSearch.Location = New System.Drawing.Point(687, 16)
+        Me.GBtnECDSearch.Location = New System.Drawing.Point(272, 20)
         Me.GBtnECDSearch.Margin = New System.Windows.Forms.Padding(2)
         Me.GBtnECDSearch.Name = "GBtnECDSearch"
         Me.GBtnECDSearch.Size = New System.Drawing.Size(106, 40)
@@ -670,7 +425,7 @@ Partial Class Form1
         Me.GTbECDBill.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GTbECDBill.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GTbECDBill.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTbECDBill.Location = New System.Drawing.Point(246, 20)
+        Me.GTbECDBill.Location = New System.Drawing.Point(91, 20)
         Me.GTbECDBill.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GTbECDBill.Name = "GTbECDBill"
         Me.GTbECDBill.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -685,7 +440,7 @@ Partial Class Form1
         Me.LableECDCN.BackColor = System.Drawing.Color.Transparent
         Me.LableECDCN.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LableECDCN.ForeColor = System.Drawing.Color.Silver
-        Me.LableECDCN.Location = New System.Drawing.Point(404, 28)
+        Me.LableECDCN.Location = New System.Drawing.Point(404, 35)
         Me.LableECDCN.Name = "LableECDCN"
         Me.LableECDCN.Size = New System.Drawing.Size(91, 18)
         Me.LableECDCN.TabIndex = 4
@@ -696,24 +451,11 @@ Partial Class Form1
         Me.LabelECDBill.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.LabelECDBill.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelECDBill.ForeColor = System.Drawing.Color.Silver
-        Me.LabelECDBill.Location = New System.Drawing.Point(192, 28)
+        Me.LabelECDBill.Location = New System.Drawing.Point(27, 35)
         Me.LabelECDBill.Name = "LabelECDBill"
         Me.LabelECDBill.Size = New System.Drawing.Size(45, 18)
         Me.LabelECDBill.TabIndex = 1
         Me.LabelECDBill.Text = "Bill No"
-        '
-        'TabConrolEMP
-        '
-        Me.TabConrolEMP.Controls.Add(Me.TabPage1)
-        Me.TabConrolEMP.Controls.Add(Me.TabPage2)
-        Me.TabConrolEMP.Controls.Add(Me.TabPage3)
-        Me.TabConrolEMP.Controls.Add(Me.TabPage4)
-        Me.TabConrolEMP.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TabConrolEMP.Location = New System.Drawing.Point(0, 0)
-        Me.TabConrolEMP.Name = "TabConrolEMP"
-        Me.TabConrolEMP.SelectedIndex = 0
-        Me.TabConrolEMP.Size = New System.Drawing.Size(999, 455)
-        Me.TabConrolEMP.TabIndex = 0
         '
         'TabPage1
         '
@@ -796,6 +538,70 @@ Partial Class Form1
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Height = 24
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        '
+        'Column4
+        '
+        Me.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column4.DataPropertyName = "billno"
+        Me.Column4.HeaderText = "Bill No."
+        Me.Column4.Name = "Column4"
+        Me.Column4.ReadOnly = True
+        '
+        'Column5
+        '
+        Me.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column5.DataPropertyName = "custname"
+        Me.Column5.HeaderText = "Customer Name"
+        Me.Column5.Name = "Column5"
+        Me.Column5.ReadOnly = True
+        '
+        'Column6
+        '
+        Me.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column6.DataPropertyName = "phoneno"
+        Me.Column6.HeaderText = "Mobile No."
+        Me.Column6.Name = "Column6"
+        Me.Column6.ReadOnly = True
+        '
+        'Column1
+        '
+        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column1.DataPropertyName = "productid"
+        Me.Column1.HeaderText = "Product ID"
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        '
+        'Column2
+        '
+        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column2.DataPropertyName = "productname"
+        Me.Column2.HeaderText = "product name"
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        '
+        'Column3
+        '
+        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column3.DataPropertyName = "QUANTITY"
+        Me.Column3.HeaderText = "quantity"
+        Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
+        '
+        'amount
+        '
+        Me.amount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.amount.DataPropertyName = "amount"
+        Me.amount.HeaderText = "Total amount"
+        Me.amount.Name = "amount"
+        Me.amount.ReadOnly = True
+        '
+        'Column7
+        '
+        Me.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column7.DataPropertyName = "DISCOUNT"
+        Me.Column7.HeaderText = "Discount"
+        Me.Column7.Name = "Column7"
+        Me.Column7.ReadOnly = True
         '
         'GPRightBottom
         '
@@ -1117,7 +923,7 @@ Partial Class Form1
         Me.GBtnEClear.ShadowDecoration.Color = System.Drawing.Color.Transparent
         Me.GBtnEClear.Size = New System.Drawing.Size(82, 37)
         Me.GBtnEClear.TabIndex = 76
-        Me.GBtnEClear.Text = "Clear"
+        Me.GBtnEClear.Text = "ID"
         '
         'GTbEBETM
         '
@@ -1463,69 +1269,17 @@ Partial Class Form1
         Me.LabelBill.TabIndex = 51
         Me.LabelBill.Text = "Bill No"
         '
-        'Column4
+        'TabConrolEMP
         '
-        Me.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column4.DataPropertyName = "billno"
-        Me.Column4.HeaderText = "Bill No."
-        Me.Column4.Name = "Column4"
-        Me.Column4.ReadOnly = True
-        '
-        'Column5
-        '
-        Me.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column5.DataPropertyName = "custname"
-        Me.Column5.HeaderText = "Customer Name"
-        Me.Column5.Name = "Column5"
-        Me.Column5.ReadOnly = True
-        '
-        'Column6
-        '
-        Me.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column6.DataPropertyName = "phoneno"
-        Me.Column6.HeaderText = "Mobile No."
-        Me.Column6.Name = "Column6"
-        Me.Column6.ReadOnly = True
-        '
-        'Column1
-        '
-        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column1.DataPropertyName = "productid"
-        Me.Column1.HeaderText = "Product ID"
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        '
-        'Column2
-        '
-        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column2.DataPropertyName = "productname"
-        Me.Column2.HeaderText = "product name"
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        '
-        'Column3
-        '
-        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column3.DataPropertyName = "QUANTITY"
-        Me.Column3.HeaderText = "quantity"
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        '
-        'amount
-        '
-        Me.amount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.amount.DataPropertyName = "amount"
-        Me.amount.HeaderText = "Total amount"
-        Me.amount.Name = "amount"
-        Me.amount.ReadOnly = True
-        '
-        'Column7
-        '
-        Me.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column7.DataPropertyName = "DISCOUNT"
-        Me.Column7.HeaderText = "Discount"
-        Me.Column7.Name = "Column7"
-        Me.Column7.ReadOnly = True
+        Me.TabConrolEMP.Controls.Add(Me.TabPage1)
+        Me.TabConrolEMP.Controls.Add(Me.TabPage2)
+        Me.TabConrolEMP.Controls.Add(Me.TabPage4)
+        Me.TabConrolEMP.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TabConrolEMP.Location = New System.Drawing.Point(0, 0)
+        Me.TabConrolEMP.Name = "TabConrolEMP"
+        Me.TabConrolEMP.SelectedIndex = 0
+        Me.TabConrolEMP.Size = New System.Drawing.Size(999, 455)
+        Me.TabConrolEMP.TabIndex = 0
         '
         'Form1
         '
@@ -1539,14 +1293,9 @@ Partial Class Form1
         Me.TabPage4.ResumeLayout(False)
         CType(Me.DGVEStock, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelEStock.ResumeLayout(False)
-        Me.TabPage3.ResumeLayout(False)
-        CType(Me.DGVERet, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.PanelERet.ResumeLayout(False)
-        Me.PanelERet2.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
         CType(Me.DGVCD, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelECD.ResumeLayout(False)
-        Me.TabConrolEMP.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.Guna2Panel1.ResumeLayout(False)
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1558,55 +1307,53 @@ Partial Class Form1
         Me.GPRightUpper.PerformLayout()
         CType(Me.PicECash, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBQr, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabConrolEMP.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents TabPage4 As TabPage
-    Friend WithEvents TabPage3 As TabPage
-    Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents TabConrolEMP As TabControl
-    Friend WithEvents TabPage1 As TabPage
-    Friend WithEvents PanelECD As Panel
-    Friend WithEvents LableECDCN As Label
-    Friend WithEvents LabelECDBill As Label
-    Friend WithEvents DGVCD As DataGridView
-    Friend WithEvents PanelEStock As Panel
-    Friend WithEvents LabelEStockPN As Label
     Friend WithEvents DGVEStock As DataGridView
-    Friend WithEvents DGVERet As DataGridView
-    Friend WithEvents GBtnEStockCheck As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents PanelEStock As Panel
     Friend WithEvents GBtnESearch As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents GTbEStockPN As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents GTbECDBill As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents LabelEStockPN As Label
+    Friend WithEvents TabPage2 As TabPage
+    Friend WithEvents DGVCD As DataGridView
+    Friend WithEvents Column8 As DataGridViewTextBoxColumn
+    Friend WithEvents customer As DataGridViewTextBoxColumn
+    Friend WithEvents PanelECD As Panel
+    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents GBtnECDSearch As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents GTbECDCN As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents PanelERet As Panel
-    Friend WithEvents GDTPRCD As Guna.UI2.WinForms.Guna2DateTimePicker
-    Friend WithEvents GBtnRSearch As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents GTbRCN As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents GTbRBN As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents PanelERet2 As Panel
-    Friend WithEvents GBtnRClear As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents GBtnRAdd As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents GTbRAmt As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents GTbRQty As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents GTbRPN As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents GTbRPID As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents LabelRAmt As Label
-    Friend WithEvents LabelRQty As Label
-    Friend WithEvents LabelRPN As Label
-    Friend WithEvents LabelRPID As Label
-    Friend WithEvents LabelRCD As Label
-    Friend WithEvents LabelERCN As Label
-    Friend WithEvents LabelRBN As Label
+    Friend WithEvents GTbECDBill As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents LableECDCN As Label
+    Friend WithEvents LabelECDBill As Label
+    Friend WithEvents TabPage1 As TabPage
+    Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents amount As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewTextBoxColumn
+    Friend WithEvents GPRightBottom As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents GBtnAdd As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents GBtnESav As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents GBtnEDel As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents GPEEnter As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents GDataGridVBillP As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents GBtnEAdd As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents GPRightUpper As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents GBtnEPrint As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents GBtnERes As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents PicECash As PictureBox
     Friend WithEvents LabelCash As Label
+    Friend WithEvents PictureBQr As PictureBox
+    Friend WithEvents Labelqr As Label
     Friend WithEvents GBtnEClear As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents GTbEBETM As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents GTbEBEDis As Guna.UI2.WinForms.Guna2TextBox
@@ -1623,28 +1370,18 @@ Partial Class Form1
     Friend WithEvents Label15 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Label17 As Label
-    Friend WithEvents PictureBQr As PictureBox
     Friend WithEvents LabelQty As Label
-    Friend WithEvents Labelqr As Label
     Friend WithEvents LabelPN As Label
     Friend WithEvents LabelPID As Label
     Friend WithEvents LabelDate As Label
     Friend WithEvents LabelMNO As Label
     Friend WithEvents LabelCN As Label
     Friend WithEvents LabelBill As Label
-    Friend WithEvents GDataGridVBillP As Guna.UI2.WinForms.Guna2DataGridView
-    Friend WithEvents GPRightBottom As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents GBtnESav As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents GBtnEDel As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
-    Friend WithEvents GBtnAdd As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents amount As DataGridViewTextBoxColumn
-    Friend WithEvents Column7 As DataGridViewTextBoxColumn
+    Friend WithEvents TabConrolEMP As TabControl
+    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2TextB As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Column9 As DataGridViewTextBoxColumn
+    Friend WithEvents qu As DataGridViewTextBoxColumn
+    Friend WithEvents Column10 As DataGridViewTextBoxColumn
 End Class
