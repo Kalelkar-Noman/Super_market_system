@@ -55,15 +55,25 @@ Partial Class Form1
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.amount = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GPRightBottom = New Guna.UI2.WinForms.Guna2Panel()
         Me.GBtnAdd = New Guna.UI2.WinForms.Guna2Button()
         Me.GBtnESav = New Guna.UI2.WinForms.Guna2Button()
         Me.GBtnEDel = New Guna.UI2.WinForms.Guna2Button()
         Me.GPEEnter = New Guna.UI2.WinForms.Guna2Panel()
-        Me.GDataGridVBillP = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.datagriedviewPint = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.GBtnEAdd = New Guna.UI2.WinForms.Guna2Button()
         Me.GPRightUpper = New Guna.UI2.WinForms.Guna2Panel()
-        Me.GBtnEPrint = New Guna.UI2.WinForms.Guna2Button()
+        Me.BtnPrint1 = New Guna.UI2.WinForms.Guna2Button()
         Me.GBtnERes = New Guna.UI2.WinForms.Guna2Button()
         Me.PicECash = New System.Windows.Forms.PictureBox()
         Me.LabelCash = New System.Windows.Forms.Label()
@@ -93,16 +103,9 @@ Partial Class Form1
         Me.LabelCN = New System.Windows.Forms.Label()
         Me.LabelBill = New System.Windows.Forms.Label()
         Me.TabConrolEMP = New System.Windows.Forms.TabControl()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.amount = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TabPage4.SuspendLayout()
         CType(Me.DGVEStock, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelEStock.SuspendLayout()
@@ -114,7 +117,7 @@ Partial Class Form1
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GPRightBottom.SuspendLayout()
         Me.GPEEnter.SuspendLayout()
-        CType(Me.GDataGridVBillP, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.datagriedviewPint, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GPRightUpper.SuspendLayout()
         CType(Me.PicECash, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBQr, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -541,6 +544,86 @@ Partial Class Form1
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         '
+        'Column4
+        '
+        Me.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column4.DataPropertyName = "billno"
+        Me.Column4.HeaderText = "Bill No."
+        Me.Column4.Name = "Column4"
+        Me.Column4.ReadOnly = True
+        '
+        'Column5
+        '
+        Me.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column5.DataPropertyName = "custname"
+        Me.Column5.HeaderText = "Customer Name"
+        Me.Column5.Name = "Column5"
+        Me.Column5.ReadOnly = True
+        '
+        'Column6
+        '
+        Me.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column6.DataPropertyName = "phoneno"
+        Me.Column6.HeaderText = "Mobile No."
+        Me.Column6.Name = "Column6"
+        Me.Column6.ReadOnly = True
+        '
+        'Column1
+        '
+        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column1.DataPropertyName = "productid"
+        Me.Column1.HeaderText = "Product ID"
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        '
+        'Column2
+        '
+        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column2.DataPropertyName = "productname"
+        Me.Column2.HeaderText = "product name"
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        '
+        'Column3
+        '
+        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column3.DataPropertyName = "QUANTITY"
+        Me.Column3.HeaderText = "quantity"
+        Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
+        '
+        'amount
+        '
+        Me.amount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.amount.DataPropertyName = "amount"
+        Me.amount.HeaderText = "Total amount"
+        Me.amount.Name = "amount"
+        Me.amount.ReadOnly = True
+        '
+        'Column12
+        '
+        Me.Column12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column12.DataPropertyName = "date"
+        Me.Column12.HeaderText = "date"
+        Me.Column12.Name = "Column12"
+        Me.Column12.ReadOnly = True
+        '
+        'Column7
+        '
+        Me.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column7.DataPropertyName = "DISCOUNT"
+        Me.Column7.HeaderText = "Discount"
+        Me.Column7.Name = "Column7"
+        Me.Column7.ReadOnly = True
+        '
+        'Column11
+        '
+        Me.Column11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column11.DataPropertyName = "cashier"
+        Me.Column11.HeaderText = "Cashier"
+        Me.Column11.Name = "Column11"
+        Me.Column11.ReadOnly = True
+        '
         'GPRightBottom
         '
         Me.GPRightBottom.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
@@ -617,7 +700,7 @@ Partial Class Form1
         'GPEEnter
         '
         Me.GPEEnter.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
-        Me.GPEEnter.Controls.Add(Me.GDataGridVBillP)
+        Me.GPEEnter.Controls.Add(Me.datagriedviewPint)
         Me.GPEEnter.Controls.Add(Me.GBtnEAdd)
         Me.GPEEnter.Controls.Add(Me.GPRightUpper)
         Me.GPEEnter.Controls.Add(Me.PictureBQr)
@@ -652,11 +735,13 @@ Partial Class Form1
         Me.GPEEnter.Size = New System.Drawing.Size(981, 228)
         Me.GPEEnter.TabIndex = 58
         '
-        'GDataGridVBillP
+        'datagriedviewPint
         '
+        Me.datagriedviewPint.AllowUserToAddRows = False
+        Me.datagriedviewPint.AllowUserToDeleteRows = False
         DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        Me.GDataGridVBillP.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
-        Me.GDataGridVBillP.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.datagriedviewPint.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        Me.datagriedviewPint.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -665,9 +750,10 @@ Partial Class Form1
         DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.GDataGridVBillP.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
-        Me.GDataGridVBillP.ColumnHeadersHeight = 4
-        Me.GDataGridVBillP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Me.datagriedviewPint.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        Me.datagriedviewPint.ColumnHeadersHeight = 4
+        Me.datagriedviewPint.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Me.datagriedviewPint.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column13, Me.Column14, Me.Column15})
         DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -675,39 +761,40 @@ Partial Class Form1
         DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.GDataGridVBillP.DefaultCellStyle = DataGridViewCellStyle6
-        Me.GDataGridVBillP.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GDataGridVBillP.Location = New System.Drawing.Point(474, 11)
-        Me.GDataGridVBillP.Margin = New System.Windows.Forms.Padding(2)
-        Me.GDataGridVBillP.MaximumSize = New System.Drawing.Size(900, 203)
-        Me.GDataGridVBillP.MinimumSize = New System.Drawing.Size(352, 204)
-        Me.GDataGridVBillP.Name = "GDataGridVBillP"
-        Me.GDataGridVBillP.RowHeadersVisible = False
-        Me.GDataGridVBillP.RowHeadersWidth = 51
-        Me.GDataGridVBillP.RowTemplate.Height = 24
-        Me.GDataGridVBillP.Size = New System.Drawing.Size(356, 204)
-        Me.GDataGridVBillP.TabIndex = 78
-        Me.GDataGridVBillP.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
-        Me.GDataGridVBillP.ThemeStyle.AlternatingRowsStyle.Font = Nothing
-        Me.GDataGridVBillP.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
-        Me.GDataGridVBillP.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
-        Me.GDataGridVBillP.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
-        Me.GDataGridVBillP.ThemeStyle.BackColor = System.Drawing.Color.White
-        Me.GDataGridVBillP.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GDataGridVBillP.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GDataGridVBillP.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.GDataGridVBillP.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GDataGridVBillP.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
-        Me.GDataGridVBillP.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.GDataGridVBillP.ThemeStyle.HeaderStyle.Height = 4
-        Me.GDataGridVBillP.ThemeStyle.ReadOnly = False
-        Me.GDataGridVBillP.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
-        Me.GDataGridVBillP.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.GDataGridVBillP.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GDataGridVBillP.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.GDataGridVBillP.ThemeStyle.RowsStyle.Height = 24
-        Me.GDataGridVBillP.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GDataGridVBillP.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.datagriedviewPint.DefaultCellStyle = DataGridViewCellStyle6
+        Me.datagriedviewPint.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.datagriedviewPint.Location = New System.Drawing.Point(474, 11)
+        Me.datagriedviewPint.Margin = New System.Windows.Forms.Padding(2)
+        Me.datagriedviewPint.MaximumSize = New System.Drawing.Size(900, 203)
+        Me.datagriedviewPint.MinimumSize = New System.Drawing.Size(352, 204)
+        Me.datagriedviewPint.Name = "datagriedviewPint"
+        Me.datagriedviewPint.ReadOnly = True
+        Me.datagriedviewPint.RowHeadersVisible = False
+        Me.datagriedviewPint.RowHeadersWidth = 51
+        Me.datagriedviewPint.RowTemplate.Height = 24
+        Me.datagriedviewPint.Size = New System.Drawing.Size(356, 204)
+        Me.datagriedviewPint.TabIndex = 78
+        Me.datagriedviewPint.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
+        Me.datagriedviewPint.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+        Me.datagriedviewPint.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
+        Me.datagriedviewPint.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
+        Me.datagriedviewPint.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
+        Me.datagriedviewPint.ThemeStyle.BackColor = System.Drawing.Color.White
+        Me.datagriedviewPint.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.datagriedviewPint.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.datagriedviewPint.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.datagriedviewPint.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.datagriedviewPint.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
+        Me.datagriedviewPint.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Me.datagriedviewPint.ThemeStyle.HeaderStyle.Height = 4
+        Me.datagriedviewPint.ThemeStyle.ReadOnly = True
+        Me.datagriedviewPint.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
+        Me.datagriedviewPint.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.datagriedviewPint.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.datagriedviewPint.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.datagriedviewPint.ThemeStyle.RowsStyle.Height = 24
+        Me.datagriedviewPint.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.datagriedviewPint.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         '
         'GBtnEAdd
         '
@@ -732,7 +819,7 @@ Partial Class Form1
         '
         Me.GPRightUpper.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GPRightUpper.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
-        Me.GPRightUpper.Controls.Add(Me.GBtnEPrint)
+        Me.GPRightUpper.Controls.Add(Me.BtnPrint1)
         Me.GPRightUpper.Controls.Add(Me.GBtnERes)
         Me.GPRightUpper.Controls.Add(Me.PicECash)
         Me.GPRightUpper.Controls.Add(Me.LabelCash)
@@ -742,35 +829,35 @@ Partial Class Form1
         Me.GPRightUpper.Size = New System.Drawing.Size(146, 228)
         Me.GPRightUpper.TabIndex = 57
         '
-        'GBtnEPrint
+        'BtnPrint1
         '
-        Me.GBtnEPrint.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.BtnPrint1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GBtnEPrint.Animated = True
-        Me.GBtnEPrint.BackColor = System.Drawing.Color.Transparent
-        Me.GBtnEPrint.BorderColor = System.Drawing.Color.Empty
-        Me.GBtnEPrint.BorderRadius = 13
-        Me.GBtnEPrint.BorderThickness = 2
-        Me.GBtnEPrint.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.GBtnEPrint.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.GBtnEPrint.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.GBtnEPrint.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.GBtnEPrint.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.GBtnEPrint.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.GBtnEPrint.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GBtnEPrint.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(181, Byte), Integer))
-        Me.GBtnEPrint.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(181, Byte), Integer))
-        Me.GBtnEPrint.HoverState.ForeColor = System.Drawing.Color.White
-        Me.GBtnEPrint.Location = New System.Drawing.Point(40, 118)
-        Me.GBtnEPrint.Margin = New System.Windows.Forms.Padding(2)
-        Me.GBtnEPrint.Name = "GBtnEPrint"
-        Me.GBtnEPrint.ShadowDecoration.BorderRadius = 13
-        Me.GBtnEPrint.ShadowDecoration.Color = System.Drawing.Color.Empty
-        Me.GBtnEPrint.ShadowDecoration.Enabled = True
-        Me.GBtnEPrint.Size = New System.Drawing.Size(78, 37)
-        Me.GBtnEPrint.TabIndex = 57
-        Me.GBtnEPrint.Text = "Print"
+        Me.BtnPrint1.Animated = True
+        Me.BtnPrint1.BackColor = System.Drawing.Color.Transparent
+        Me.BtnPrint1.BorderColor = System.Drawing.Color.Empty
+        Me.BtnPrint1.BorderRadius = 13
+        Me.BtnPrint1.BorderThickness = 2
+        Me.BtnPrint1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.BtnPrint1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.BtnPrint1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.BtnPrint1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.BtnPrint1.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.BtnPrint1.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
+        Me.BtnPrint1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.BtnPrint1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(181, Byte), Integer))
+        Me.BtnPrint1.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(181, Byte), Integer))
+        Me.BtnPrint1.HoverState.ForeColor = System.Drawing.Color.White
+        Me.BtnPrint1.Location = New System.Drawing.Point(40, 118)
+        Me.BtnPrint1.Margin = New System.Windows.Forms.Padding(2)
+        Me.BtnPrint1.Name = "BtnPrint1"
+        Me.BtnPrint1.ShadowDecoration.BorderRadius = 13
+        Me.BtnPrint1.ShadowDecoration.Color = System.Drawing.Color.Empty
+        Me.BtnPrint1.ShadowDecoration.Enabled = True
+        Me.BtnPrint1.Size = New System.Drawing.Size(78, 37)
+        Me.BtnPrint1.TabIndex = 57
+        Me.BtnPrint1.Text = "Print"
         '
         'GBtnERes
         '
@@ -1219,85 +1306,28 @@ Partial Class Form1
         Me.TabConrolEMP.Size = New System.Drawing.Size(999, 455)
         Me.TabConrolEMP.TabIndex = 0
         '
-        'Column4
+        'Column13
         '
-        Me.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column4.DataPropertyName = "billno"
-        Me.Column4.HeaderText = "Bill No."
-        Me.Column4.Name = "Column4"
-        Me.Column4.ReadOnly = True
+        Me.Column13.DataPropertyName = "quantity"
+        Me.Column13.HeaderText = "quantity"
+        Me.Column13.Name = "Column13"
+        Me.Column13.ReadOnly = True
         '
-        'Column5
+        'Column14
         '
-        Me.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column5.DataPropertyName = "custname"
-        Me.Column5.HeaderText = "Customer Name"
-        Me.Column5.Name = "Column5"
-        Me.Column5.ReadOnly = True
+        Me.Column14.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column14.DataPropertyName = "productname"
+        Me.Column14.HeaderText = "product name"
+        Me.Column14.Name = "Column14"
+        Me.Column14.ReadOnly = True
         '
-        'Column6
+        'Column15
         '
-        Me.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column6.DataPropertyName = "phoneno"
-        Me.Column6.HeaderText = "Mobile No."
-        Me.Column6.Name = "Column6"
-        Me.Column6.ReadOnly = True
-        '
-        'Column1
-        '
-        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column1.DataPropertyName = "productid"
-        Me.Column1.HeaderText = "Product ID"
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        '
-        'Column2
-        '
-        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column2.DataPropertyName = "productname"
-        Me.Column2.HeaderText = "product name"
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        '
-        'Column3
-        '
-        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column3.DataPropertyName = "QUANTITY"
-        Me.Column3.HeaderText = "quantity"
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        '
-        'amount
-        '
-        Me.amount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.amount.DataPropertyName = "amount"
-        Me.amount.HeaderText = "Total amount"
-        Me.amount.Name = "amount"
-        Me.amount.ReadOnly = True
-        '
-        'Column12
-        '
-        Me.Column12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column12.DataPropertyName = "date"
-        Me.Column12.HeaderText = "date"
-        Me.Column12.Name = "Column12"
-        Me.Column12.ReadOnly = True
-        '
-        'Column7
-        '
-        Me.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column7.DataPropertyName = "DISCOUNT"
-        Me.Column7.HeaderText = "Discount"
-        Me.Column7.Name = "Column7"
-        Me.Column7.ReadOnly = True
-        '
-        'Column11
-        '
-        Me.Column11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column11.DataPropertyName = "cashier"
-        Me.Column11.HeaderText = "Cashier"
-        Me.Column11.Name = "Column11"
-        Me.Column11.ReadOnly = True
+        Me.Column15.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column15.DataPropertyName = "amount"
+        Me.Column15.HeaderText = "amount"
+        Me.Column15.Name = "Column15"
+        Me.Column15.ReadOnly = True
         '
         'Form1
         '
@@ -1320,7 +1350,7 @@ Partial Class Form1
         Me.GPRightBottom.ResumeLayout(False)
         Me.GPEEnter.ResumeLayout(False)
         Me.GPEEnter.PerformLayout()
-        CType(Me.GDataGridVBillP, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.datagriedviewPint, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GPRightUpper.ResumeLayout(False)
         Me.GPRightUpper.PerformLayout()
         CType(Me.PicECash, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1355,10 +1385,10 @@ Partial Class Form1
     Friend WithEvents GBtnESav As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents GBtnEDel As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents GPEEnter As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents GDataGridVBillP As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents datagriedviewPint As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents GBtnEAdd As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents GPRightUpper As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents GBtnEPrint As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents BtnPrint1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents GBtnERes As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents PicECash As PictureBox
     Friend WithEvents LabelCash As Label
@@ -1404,4 +1434,7 @@ Partial Class Form1
     Friend WithEvents Column12 As DataGridViewTextBoxColumn
     Friend WithEvents Column7 As DataGridViewTextBoxColumn
     Friend WithEvents Column11 As DataGridViewTextBoxColumn
+    Friend WithEvents Column13 As DataGridViewTextBoxColumn
+    Friend WithEvents Column14 As DataGridViewTextBoxColumn
+    Friend WithEvents Column15 As DataGridViewTextBoxColumn
 End Class

@@ -1,5 +1,10 @@
 ﻿Imports System.Data.SqlClient
+Imports System.Drawing.Printing
 Public Class Form1
+    Dim WithEvents PD As New PrintDocument
+    Dim PPD As New PrintPreviewDialog
+    Dim Longpaper As Integer
+
     Dim pdn As String = ""
     Dim pid As Integer = 0
     Dim amt As Integer = 0
@@ -43,6 +48,7 @@ Public Class Form1
         If dr.Read() Then
             qty = dr("quantity")
         End If
+
         DBCon.Close()
         Try
             If GTbEBEQty.Text > qty Then
@@ -55,6 +61,12 @@ Public Class Form1
                 query = "update products set quantity=quantity - '" & GTbEBEQty.Text & "' where pid='" & pid & "'"
                 Dim cmd2 As New SqlCommand(query, DBCon)
                 cmd2.ExecuteNonQuery()
+                query = "select quantity,productname,amount from sellhistory where billno='" & GTbEBEBN.Text & "'"
+                Dim cmd3 As New SqlCommand(query, DBCon)
+                Dim drr As SqlDataReader = cmd3.ExecuteReader
+                Dim dtt As New DataTable
+                dtt.Load(drr)
+                datagriedviewPint.DataSource = dtt
             End If
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -137,7 +149,7 @@ Public Class Form1
     Private Sub Guna2DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellClick
         If e.RowIndex >= 0 Then
             slt = True
-            Dim row As DataGridViewRow = Guna2DataGridView1 .Rows(e.RowIndex)
+            Dim row As DataGridViewRow = Guna2DataGridView1.Rows(e.RowIndex)
             If row.Cells(0).Value = row.Cells(0).Value Then
                 sltcell1 = row.Cells(3).Value
                 sltcell2 = row.Cells(0).Value
@@ -182,6 +194,111 @@ Public Class Form1
     End Sub
 
     Private Sub GBtnAdd_Click(sender As Object, e As EventArgs) Handles GBtnAdd.Click
+
+    End Sub
+
+    Sub changelongpaper()
+        Dim rowcount As Integer
+        Longpaper = 0
+        rowcount = datagriedviewPint.Rows.Count
+        Longpaper = rowcount * 15
+        Longpaper = Longpaper + 500
+
+    End Sub
+
+    Private Sub GBtnEPrint_Click(sender As Object, e As EventArgs) Handles BtnPrint1.Click
+        changelongpaper()
+        PPD.Document = PD
+        PPD.ShowDialog()
+    End Sub
+
+    Private Sub PD_BeginPrint(sender As Object, e As PrintEventArgs) Handles PD.BeginPrint
+        Dim pagesetup As New PageSettings
+        pagesetup.PaperSize = New PaperSize("Custom", 250, Longpaper)
+        PD.DefaultPageSettings = pagesetup
+    End Sub
+
+    Private Sub PD_PrintPage(sender As Object, e As PrintPageEventArgs) Handles PD.PrintPage
+        Dim F8 As New Font("Calibri", 8, FontStyle.Regular)
+        Dim F10 As New Font("Calibri", 10, FontStyle.Regular)
+        Dim F10b As New Font("Calibri", 10, FontStyle.Bold)
+        Dim F14 As New Font("Calibri", 14, FontStyle.Bold)
+
+        Dim leftmargin As Integer = PD.DefaultPageSettings.Margins.Left
+        Dim Centermargin As Integer = PD.DefaultPageSettings.PaperSize.Width / 2
+        Dim rightmargin As Integer = PD.DefaultPageSettings.PaperSize.Width
+
+        Dim right As New StringFormat
+        Dim center As New StringFormat
+
+        right.Alignment = StringAlignment.Far
+        center.Alignment = StringAlignment.Center
+
+        Dim line As String
+
+        line = "------------------------------------------------------------------------------------------"
+
+        e.Graphics.DrawString("BIG MART", F14, Brushes.Red, Centermargin, 5, center)
+        e.Graphics.DrawString("Veena Nagar, Thane west 400604", F10, Brushes.Black, Centermargin, 25, center)
+        e.Graphics.DrawString("tel + 998765343", F10, Brushes.Black, Centermargin, 40, center)
+
+        e.Graphics.DrawString("Casher", F8, Brushes.Black, 0, 60)
+        e.Graphics.DrawString(":", F8, Brushes.Black, 50, 60)
+        e.Graphics.DrawString("Rahul Prajapati", F8, Brushes.Black, 70, 60)
+
+        ' e.Graphics.DrawString("Casher", F8, Brushes.Black, 0, 75)
+        e.Graphics.DrawString(":", F8, Brushes.Black, 50, 75)
+        'e.Graphics.DrawString("DEEPAK K GUPTA", F10, Brushes.Black, 70, 75)
+
+        e.Graphics.DrawString("Date              " & Date.Now(), F8, Brushes.Black, 0, 75)
+        e.Graphics.DrawString(line, F8, Brushes.Black, 0, 100)
+        ' line = "--------------------------------------------------------------------------------------------"
+
+        Dim Height As Integer
+        Dim i As Long
+
+        datagriedviewPint.AllowUserToAddRows = False
+
+        For row As Integer = 0 To datagriedviewPint.RowCount - 1
+            Height += 15
+            e.Graphics.DrawString(datagriedviewPint.Rows(row).Cells(1).Value.ToString, F10, Brushes.Black, 0, 100 + Height)
+            e.Graphics.DrawString(datagriedviewPint.Rows(row).Cells(0).Value.ToString, F10, Brushes.Black, 25, 100 + Height)
+
+            i = datagriedviewPint.Rows(row).Cells(2).Value
+            datagriedviewPint.Rows(row).Cells(2).Value = Format(i, "##,##0")
+            e.Graphics.DrawString(datagriedviewPint.Rows(row).Cells(2).Value.ToString, F10, Brushes.Black, rightmargin, 100 + Height, right)
+        Next
+        Dim height2 As Integer
+
+        height2 = 110 + Height
+
+        Sumprice()
+        line = "--------------------------------------------------------------------------------------------"
+        e.Graphics.DrawString(line, F8, Brushes.Black, 0, Height)
+        e.Graphics.DrawString("Total: " & Format(t_price, "##,##0"), F10, Brushes.Black, rightmargin, 10 + height2, right)
+        e.Graphics.DrawString(t_qty, F10, Brushes.Black, 0, 10 + height2)
+        e.Graphics.DrawString("...................Thanks For Shopping....................", F10, Brushes.Black, Centermargin, 35 + height2, center)
+        ' e.Graphics.DrawString("BIG MART", F10, Brushes.Black, Centermargin, 35 + height2, center)
+
+    End Sub
+    Dim t_price As Long
+    Dim t_qty As Long
+    Sub Sumprice()
+        Dim countprice As Long = 0
+
+        For rowitem As Long = 0 To datagriedviewPint.RowCount - 1
+            countprice = countprice + Val(datagriedviewPint.Rows(rowitem).Cells(2).Value * datagriedviewPint.Rows(rowitem).Cells(1).Value)
+        Next
+        t_price = countprice
+
+        Dim countqty As Long = 0
+        For rowitem As Long = 0 To datagriedviewPint.RowCount - 1
+            countqty = countqty + datagriedviewPint.Rows(rowitem).Cells(1).Value
+        Next
+        t_qty = countqty
+    End Sub
+
+    Private Sub GBtnERes_Click(sender As Object, e As EventArgs) Handles GBtnERes.Click
 
     End Sub
 End Class
