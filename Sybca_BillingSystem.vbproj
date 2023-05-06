@@ -115,10 +115,10 @@
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LOGIN.designer.vb">
-      <DependentUpon>LOGIN.vb</DependentUpon>
+    <Compile Include="loginbill.designer.vb">
+      <DependentUpon>loginbill.vb</DependentUpon>
     </Compile>
-    <Compile Include="LOGIN.vb">
+    <Compile Include="loginbill.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainAdim.designer.vb">
@@ -131,6 +131,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="sign_in_bill.designer.vb">
+      <DependentUpon>sign_in_bill.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sign_in_bill.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="SMPModule.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -216,12 +222,6 @@
     <Compile Include="Uservb.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User_Signin.designer.vb">
-      <DependentUpon>User_Signin.vb</DependentUpon>
-    </Compile>
-    <Compile Include="User_Signin.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Brand.resx">
@@ -233,8 +233,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LOGIN.resx">
-      <DependentUpon>LOGIN.vb</DependentUpon>
+    <EmbeddedResource Include="loginbill.resx">
+      <DependentUpon>loginbill.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainAdim.resx">
       <DependentUpon>MainAdim.vb</DependentUpon>
@@ -260,6 +260,9 @@
     <EmbeddedResource Include="Sale_History.resx">
       <DependentUpon>Sale_History.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="sign_in_bill.resx">
+      <DependentUpon>sign_in_bill.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Stock_Add.resx">
       <DependentUpon>Stock_Add.vb</DependentUpon>
     </EmbeddedResource>
@@ -280,9 +283,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Uservb.resx">
       <DependentUpon>Uservb.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="User_Signin.resx">
-      <DependentUpon>User_Signin.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -319,6 +319,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userpass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doubleeye.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

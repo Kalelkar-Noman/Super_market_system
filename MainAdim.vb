@@ -103,7 +103,7 @@
     End Sub
     Private Sub GBtnLog_Click(sender As Object, e As EventArgs) Handles GBtnLog.Click
         Hidesubmenu()
-        User_Signin.Show()
+        sign_in_bill.Show()
         Me.Close()
     End Sub
 End Class
