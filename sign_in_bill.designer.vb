@@ -201,6 +201,7 @@ Partial Class sign_in_bill
         Me.ClientSize = New System.Drawing.Size(662, 413)
         Me.Controls.Add(Me.GGPanelPass)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "sign_in_bill"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

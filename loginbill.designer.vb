@@ -23,6 +23,7 @@ Partial Class loginbill
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(loginbill))
         Me.Gprogress = New Guna.UI2.WinForms.Guna2CircleProgressBar()
         Me.Timerlogin = New System.Windows.Forms.Timer(Me.components)
         Me.LabelLoading = New System.Windows.Forms.Label()
@@ -34,11 +35,12 @@ Partial Class loginbill
         Me.Gprogress.BackColor = System.Drawing.Color.Transparent
         Me.Gprogress.FillColor = System.Drawing.Color.Transparent
         Me.Gprogress.FillThickness = 12
-        Me.Gprogress.Font = New System.Drawing.Font("Showcard Gothic", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gprogress.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Gprogress.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Gprogress.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
         Me.Gprogress.InnerColor = System.Drawing.Color.Transparent
-        Me.Gprogress.Location = New System.Drawing.Point(300, 140)
+        Me.Gprogress.Location = New System.Drawing.Point(225, 114)
+        Me.Gprogress.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Gprogress.Minimum = 0
         Me.Gprogress.Name = "Gprogress"
         Me.Gprogress.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(51, Byte), Integer))
@@ -48,7 +50,7 @@ Partial Class loginbill
         Me.Gprogress.ProgressThickness = 12
         Me.Gprogress.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.Gprogress.ShowText = True
-        Me.Gprogress.Size = New System.Drawing.Size(216, 216)
+        Me.Gprogress.Size = New System.Drawing.Size(176, 176)
         Me.Gprogress.TabIndex = 0
         Me.Gprogress.Value = 80
         '
@@ -60,23 +62,26 @@ Partial Class loginbill
         '
         Me.LabelLoading.AutoSize = True
         Me.LabelLoading.BackColor = System.Drawing.Color.Transparent
-        Me.LabelLoading.Font = New System.Drawing.Font("Showcard Gothic", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelLoading.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelLoading.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.LabelLoading.Location = New System.Drawing.Point(318, 374)
+        Me.LabelLoading.Location = New System.Drawing.Point(238, 304)
+        Me.LabelLoading.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelLoading.Name = "LabelLoading"
-        Me.LabelLoading.Size = New System.Drawing.Size(204, 43)
+        Me.LabelLoading.Size = New System.Drawing.Size(144, 31)
         Me.LabelLoading.TabIndex = 1
         Me.LabelLoading.Text = "Loading..."
         '
         'loginbill
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(600, 366)
         Me.Controls.Add(Me.LabelLoading)
         Me.Controls.Add(Me.Gprogress)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "loginbill"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "loginbill"
