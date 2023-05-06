@@ -27,6 +27,7 @@ Partial Class Sale_History
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GPanelSaleHis = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Gcashierl = New Guna.UI2.WinForms.Guna2Button()
         Me.GLabelCas = New System.Windows.Forms.Label()
         Me.GLabelSHTS = New System.Windows.Forms.Label()
         Me.GLabelSHT1 = New System.Windows.Forms.Label()
@@ -36,20 +37,22 @@ Partial Class Sale_History
         Me.GTBSHC = New Guna.UI2.WinForms.Guna2TextBox()
         Me.GDTPSHD2 = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.GDTPSHD1 = New Guna.UI2.WinForms.Guna2DateTimePicker()
-        Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.Guna2DidView1 = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GPanelSaleHis.SuspendLayout()
-        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Guna2DidView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GPanelSaleHis
         '
         Me.GPanelSaleHis.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
+        Me.GPanelSaleHis.Controls.Add(Me.Gcashierl)
         Me.GPanelSaleHis.Controls.Add(Me.GLabelCas)
         Me.GPanelSaleHis.Controls.Add(Me.GLabelSHTS)
         Me.GPanelSaleHis.Controls.Add(Me.GLabelSHT1)
@@ -61,10 +64,40 @@ Partial Class Sale_History
         Me.GPanelSaleHis.Controls.Add(Me.GDTPSHD1)
         Me.GPanelSaleHis.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.GPanelSaleHis.Location = New System.Drawing.Point(0, 315)
-        Me.GPanelSaleHis.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GPanelSaleHis.Margin = New System.Windows.Forms.Padding(2)
         Me.GPanelSaleHis.Name = "GPanelSaleHis"
         Me.GPanelSaleHis.Size = New System.Drawing.Size(859, 115)
         Me.GPanelSaleHis.TabIndex = 0
+        '
+        'Gcashierl
+        '
+        Me.Gcashierl.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.Gcashierl.Animated = True
+        Me.Gcashierl.BackColor = System.Drawing.Color.Transparent
+        Me.Gcashierl.BorderRadius = 17
+        Me.Gcashierl.BorderThickness = 2
+        Me.Gcashierl.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Gcashierl.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Gcashierl.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Gcashierl.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Gcashierl.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Gcashierl.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
+        Me.Gcashierl.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.Gcashierl.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(95, Byte), Integer))
+        Me.Gcashierl.Image = Global.Sybca_BillingSystem.My.Resources.Resources.load
+        Me.Gcashierl.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Gcashierl.ImageSize = New System.Drawing.Size(32, 32)
+        Me.Gcashierl.Location = New System.Drawing.Point(698, 60)
+        Me.Gcashierl.Margin = New System.Windows.Forms.Padding(2)
+        Me.Gcashierl.Name = "Gcashierl"
+        Me.Gcashierl.ShadowDecoration.BorderRadius = 17
+        Me.Gcashierl.ShadowDecoration.Color = System.Drawing.Color.White
+        Me.Gcashierl.ShadowDecoration.Depth = 10
+        Me.Gcashierl.ShadowDecoration.Enabled = True
+        Me.Gcashierl.Size = New System.Drawing.Size(123, 44)
+        Me.Gcashierl.TabIndex = 30
+        Me.Gcashierl.Text = "Load Data"
+        Me.Gcashierl.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'GLabelCas
         '
@@ -72,7 +105,7 @@ Partial Class Sale_History
         Me.GLabelCas.AutoSize = True
         Me.GLabelCas.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold)
         Me.GLabelCas.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.GLabelCas.Location = New System.Drawing.Point(578, 74)
+        Me.GLabelCas.Location = New System.Drawing.Point(455, 65)
         Me.GLabelCas.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.GLabelCas.Name = "GLabelCas"
         Me.GLabelCas.Size = New System.Drawing.Size(49, 13)
@@ -167,7 +200,7 @@ Partial Class Sale_History
         Me.GBtnSH.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.GBtnSH.ImageSize = New System.Drawing.Size(32, 32)
         Me.GBtnSH.Location = New System.Drawing.Point(282, 65)
-        Me.GBtnSH.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GBtnSH.Margin = New System.Windows.Forms.Padding(2)
         Me.GBtnSH.Name = "GBtnSH"
         Me.GBtnSH.ShadowDecoration.BorderRadius = 17
         Me.GBtnSH.ShadowDecoration.Color = System.Drawing.Color.White
@@ -195,7 +228,7 @@ Partial Class Sale_History
         Me.GTBSHC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GTBSHC.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GTBSHC.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GTBSHC.Location = New System.Drawing.Point(663, 63)
+        Me.GTBSHC.Location = New System.Drawing.Point(522, 60)
         Me.GTBSHC.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GTBSHC.Name = "GTBSHC"
         Me.GTBSHC.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -217,7 +250,7 @@ Partial Class Sale_History
         Me.GDTPSHD2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GDTPSHD2.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.GDTPSHD2.Location = New System.Drawing.Point(355, 16)
-        Me.GDTPSHD2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GDTPSHD2.Margin = New System.Windows.Forms.Padding(2)
         Me.GDTPSHD2.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.GDTPSHD2.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.GDTPSHD2.Name = "GDTPSHD2"
@@ -234,7 +267,7 @@ Partial Class Sale_History
         Me.GDTPSHD1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GDTPSHD1.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.GDTPSHD1.Location = New System.Drawing.Point(138, 15)
-        Me.GDTPSHD1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GDTPSHD1.Margin = New System.Windows.Forms.Padding(2)
         Me.GDTPSHD1.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.GDTPSHD1.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.GDTPSHD1.Name = "GDTPSHD1"
@@ -242,18 +275,18 @@ Partial Class Sale_History
         Me.GDTPSHD1.TabIndex = 19
         Me.GDTPSHD1.Value = New Date(2023, 4, 26, 21, 12, 40, 356)
         '
-        'Guna2DataGridView1
+        'Guna2DidView1
         '
-        Me.Guna2DataGridView1.AllowUserToAddRows = False
-        Me.Guna2DataGridView1.AllowUserToDeleteRows = False
-        Me.Guna2DataGridView1.AllowUserToResizeRows = False
+        Me.Guna2DidView1.AllowUserToAddRows = False
+        Me.Guna2DidView1.AllowUserToDeleteRows = False
+        Me.Guna2DidView1.AllowUserToResizeRows = False
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(86, Byte), Integer), CType(CType(86, Byte), Integer), CType(CType(86, Byte), Integer))
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.Guna2DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(58, Byte), Integer))
+        Me.Guna2DidView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.Guna2DidView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(58, Byte), Integer))
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -261,10 +294,10 @@ Partial Class Sale_History
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.Guna2DataGridView1.ColumnHeadersHeight = 18
-        Me.Guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.Guna2DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7})
+        Me.Guna2DidView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.Guna2DidView1.ColumnHeadersHeight = 18
+        Me.Guna2DidView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Me.Guna2DidView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column1, Me.Column7})
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.Silver
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -272,14 +305,14 @@ Partial Class Sale_History
         DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
-        Me.Guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2DataGridView1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
-        Me.Guna2DataGridView1.ReadOnly = True
-        Me.Guna2DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.Guna2DidView1.DefaultCellStyle = DataGridViewCellStyle3
+        Me.Guna2DidView1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2DidView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DidView1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2DidView1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2DidView1.Name = "Guna2DidView1"
+        Me.Guna2DidView1.ReadOnly = True
+        Me.Guna2DidView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle4.BackColor = System.Drawing.Color.Silver
         DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -287,37 +320,38 @@ Partial Class Sale_History
         DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Silver
         DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Guna2DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
-        Me.Guna2DataGridView1.RowHeadersVisible = False
-        Me.Guna2DataGridView1.RowHeadersWidth = 51
-        Me.Guna2DataGridView1.RowTemplate.Height = 24
-        Me.Guna2DataGridView1.Size = New System.Drawing.Size(859, 315)
-        Me.Guna2DataGridView1.TabIndex = 1
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
-        Me.Guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(58, Byte), Integer))
-        Me.Guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 18
-        Me.Guna2DataGridView1.ThemeStyle.ReadOnly = True
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Height = 24
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.Guna2DidView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
+        Me.Guna2DidView1.RowHeadersVisible = False
+        Me.Guna2DidView1.RowHeadersWidth = 51
+        Me.Guna2DidView1.RowTemplate.Height = 24
+        Me.Guna2DidView1.Size = New System.Drawing.Size(859, 315)
+        Me.Guna2DidView1.TabIndex = 1
+        Me.Guna2DidView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
+        Me.Guna2DidView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+        Me.Guna2DidView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
+        Me.Guna2DidView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
+        Me.Guna2DidView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
+        Me.Guna2DidView1.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(58, Byte), Integer))
+        Me.Guna2DidView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DidView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DidView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.Guna2DidView1.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2DidView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
+        Me.Guna2DidView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Me.Guna2DidView1.ThemeStyle.HeaderStyle.Height = 18
+        Me.Guna2DidView1.ThemeStyle.ReadOnly = True
+        Me.Guna2DidView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
+        Me.Guna2DidView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.Guna2DidView1.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2DidView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.Guna2DidView1.ThemeStyle.RowsStyle.Height = 24
+        Me.Guna2DidView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DidView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         '
         'Column2
         '
         Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column2.DataPropertyName = "productid"
         Me.Column2.HeaderText = "ProductID"
         Me.Column2.MinimumWidth = 6
         Me.Column2.Name = "Column2"
@@ -326,6 +360,7 @@ Partial Class Sale_History
         'Column3
         '
         Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column3.DataPropertyName = "productname"
         Me.Column3.HeaderText = "Product Name"
         Me.Column3.MinimumWidth = 6
         Me.Column3.Name = "Column3"
@@ -334,6 +369,7 @@ Partial Class Sale_History
         'Column4
         '
         Me.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column4.DataPropertyName = "amount"
         Me.Column4.HeaderText = "Price"
         Me.Column4.MinimumWidth = 6
         Me.Column4.Name = "Column4"
@@ -342,6 +378,7 @@ Partial Class Sale_History
         'Column5
         '
         Me.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column5.DataPropertyName = "quantity"
         Me.Column5.HeaderText = "Qty"
         Me.Column5.MinimumWidth = 6
         Me.Column5.Name = "Column5"
@@ -350,16 +387,24 @@ Partial Class Sale_History
         'Column6
         '
         Me.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column6.DataPropertyName = "discount"
         Me.Column6.HeaderText = "Discount"
         Me.Column6.MinimumWidth = 6
         Me.Column6.Name = "Column6"
         Me.Column6.ReadOnly = True
         '
+        'Column1
+        '
+        Me.Column1.DataPropertyName = "cashier"
+        Me.Column1.HeaderText = "Cashier"
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        '
         'Column7
         '
         Me.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column7.HeaderText = "Total"
-        Me.Column7.MinimumWidth = 6
+        Me.Column7.DataPropertyName = "date"
+        Me.Column7.HeaderText = "Date"
         Me.Column7.Name = "Column7"
         Me.Column7.ReadOnly = True
         '
@@ -369,15 +414,15 @@ Partial Class Sale_History
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(859, 430)
-        Me.Controls.Add(Me.Guna2DataGridView1)
+        Me.Controls.Add(Me.Guna2DidView1)
         Me.Controls.Add(Me.GPanelSaleHis)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Sale_History"
         Me.Text = "Sale_History"
         Me.GPanelSaleHis.ResumeLayout(False)
         Me.GPanelSaleHis.PerformLayout()
-        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Guna2DidView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -388,15 +433,17 @@ Partial Class Sale_History
     Friend WithEvents GTBSHC As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents GDTPSHD2 As Guna.UI2.WinForms.Guna2DateTimePicker
     Friend WithEvents GDTPSHD1 As Guna.UI2.WinForms.Guna2DateTimePicker
-    Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents Guna2DidView1 As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents GLabelCas As Label
     Friend WithEvents GLabelSHTS As Label
     Friend WithEvents GLabelSHT1 As Label
     Friend WithEvents GLabelSHF1 As Label
+    Friend WithEvents Gcashierl As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column7 As DataGridViewTextBoxColumn
 End Class

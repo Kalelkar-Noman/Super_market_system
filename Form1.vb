@@ -49,11 +49,12 @@ Public Class Form1
                 MsgBox("quantity is greater")
             Else
                 DBCon.Open()
-                query = "insert into sellhistory values('" & GTbEBEBN.Text & "','" & GTbEBEMN.Text & "','" & pid & "','" & GTbEBEPN.Text & "','" & GTbEBEQty.Text & "','" & GTbEBECA.Text & "','" & GTbEBETM.Text & "','" & dist & "','" & GDTPEBD1.Value & "')"
-
-                cmd.ExecuteNonQuery()
+                query = "insert into sellhistory values('" & GTbEBEBN.Text & "','" & GTbEBEMN.Text & "','" & pid & "','" & UCase(GTbEBEPN.Text) & "','" & GTbEBEQty.Text & "','" & UCase(GTbEBECA.Text) & "','" & GTbEBETM.Text & "','" & dist & "','" & GDTPEBD1.Value & "','" & UCase(LabelCash.Text) & "')"
+                Dim cmd1 As New SqlCommand(query, DBCon)
+                cmd1.ExecuteNonQuery()
                 query = "update products set quantity=quantity - '" & GTbEBEQty.Text & "' where pid='" & pid & "'"
-                cmd.ExecuteNonQuery()
+                Dim cmd2 As New SqlCommand(query, DBCon)
+                cmd2.ExecuteNonQuery()
             End If
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -154,7 +155,8 @@ Public Class Form1
                     query = "update products set quantity=quantity +'" & sltcell3 & "' where pid='" & pid & "'"
                     cmd.ExecuteNonQuery()
                     query = "delete from sellhistory where PID='" & sltcell1 & "' and billno='" & sltcell2 & "'"
-                    cmd.ExecuteNonQuery()
+                    Dim cmd1 As New SqlCommand(query, DBCon)
+                    cmd1.ExecuteNonQuery()
                     MsgBox("data updated succesfully")
                     DBCon.Close()
                 Catch ex As Exception
@@ -173,5 +175,13 @@ Public Class Form1
     Private Sub GBtnESav_Click(sender As Object, e As EventArgs) Handles GBtnESav.Click
         sign_in_bill.Show()
         Me.Close()
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub GBtnAdd_Click(sender As Object, e As EventArgs) Handles GBtnAdd.Click
+
     End Sub
 End Class
