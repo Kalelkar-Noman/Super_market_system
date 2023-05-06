@@ -14,7 +14,7 @@ Public Class Supplier_mod
     Sub insrt_prls()
         Try
             DBCon.Open()
-            query = "insert into SUPPLIER values('" & UCase(GTbSMSN.Text) & "','" & UCase(GTbSMAdd.Text) & "','" & UCase(GTbSMCat.Text) & "','" & GTbSMPNo.Text & "','" & UCase(GTbSMEid.Text) & "','','','')"
+            query = "insert into SUPPLIER values('" & UCase(GTbSMSN.Text) & "','" & UCase(GTbSMAdd.Text) & "','" & UCase(GTbSMCat.Text) & "','" & GTbSMPNo.Text & "','" & UCase(GTbSMEid.Text) & "','','')"
             Dim cmd As New SqlCommand(query, DBCon)
             cmd.ExecuteNonQuery()
             DBCon.Close()

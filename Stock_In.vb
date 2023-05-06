@@ -7,14 +7,16 @@ Public Class Stock_In
         Try
             DBCon.Open()
             query = "select PRODUCTS.PID,PRODUCTS.PRODUCT_NAME,PRODUCTS.QUANTITY,PRODUCTS.DATE,SUPPLIER.STOCKINBY,SUPPLIER.SPNAME from PRODUCTS,SUPPLIER WHERE PID=' " & GTBSEpID.Text & "'"
+            ' query = "select pid,product_name,quantity,date from products"
             Dim cmd As New SqlCommand(query, DBCon)
             Dim dr As SqlDataReader = cmd.ExecuteReader()
-            If (dr.Read()) Then
-                ppid = dr("pid")
-            End If
+            'If (dr.Read()) Then
+
+            'End If
             Dim dt As New DataTable
             dt.Load(dr)
             GDataGridStockEn.DataSource = dt
+            ppid = dr("pid")
             DBCon.Close()
         Catch ex As Exception
         Finally
@@ -23,6 +25,7 @@ Public Class Stock_In
                 DBCon.Close()
             End If
         End Try
+
     End Sub
 
     Private Sub LinkSe_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkSe.LinkClicked
